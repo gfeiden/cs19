@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Cool Stars 19</title>
+	<meta name="description" content="Cool Stars 19">  
+	<meta name="author" content="Alexis Lavail">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+
+   <!-- Script
+   ================================================== -->
+   <script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+   <link rel="shortcut icon" href="favicon.ico" >
+
+</head>
+
+<body>
+
+   <div id="preloader">      
+      <div id="status">
+         <img src="images/preloader.gif" height="64" width="64" alt="">
+      </div>
+   </div>
+
+   <!-- Header
+   ================================================== -->
+   <header>
+      <nav id="nav-wrap">         
+         
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show Menu</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide Menu</a>         
+
+         <ul id="nav" class="nav">
+            <li><a class="smoothscroll" href="#home">home</a></li>
+            <li><a class="smoothscroll" href="#news">news</a></li>
+            <li><a class="smoothscroll" href="#calendar">calendar</a></li>
+            <li><a class="smoothscroll" href="#registration">registration</a></li>
+            <li><a class="smoothscroll" href="#venue">venue</a></li>
+            <li><a class="smoothscroll" href="#subscribe">logistics</a></li>
+            <li><a class="smoothscroll" href="#subscribe">misc</a></li>
+            <li><a class="smoothscroll" href="#subscribe">participants</a></li>
+            <li><a class="smoothscroll" href="#subscribe">posters</a></li>
+            <li><a class="smoothscroll" href="#subscribe">presentations</a></li>
+            <li><a class="smoothscroll" href="#subscribe">proceedings</a></li>
+            <li><a class="smoothscroll" href="#subscribe">public lecture</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <ul class="header-social">
+         <li><a href="https://www.facebook.com/groups/1464538487100756/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="https://twitter.com/hashtag/cs19" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+
+   </header> <!-- Header End -->
+
+
+   <!-- Homepage Hero
+   ================================================== -->
+   <section id="hero">
+
+	   <div class="row">
+
+		   <div class="twelve columns">
+
+  			   <div class="hero-text">
+				   <h1 class="responsive-headline">Welcome to Cool Stars 19 in Uppsala, Sweden</h1>
+				   <p>DEV version</br></p>
+			   </div> 
+		   </div>
+
+	   </div>
+
+   </section> <!-- Homepage Hero end -->
+
+
+   <!-- Home Section
+   ================================================== -->
+   <section id='home'>
+
+      <div class="row">
+        <div class="twelve columns">
+	  <div class="row section-head">
+ 	    <h1>About Cool Stars</h1>
+	  </div>
+          <p align="justify">The "Cambridge Workshop on Cool Stars, Stellar Systems, and the Sun" (also known as "Cool Stars") has been running for 36 years since the first one was held in Cambridge, Massachusetts, in 1980. Previous Cool Stars venues include Santa Fe, NM; 		  Boulder, CO; Seattle, WA; Tucson, AZ; Athens, GA; Florence, Italy; Tenerife, Spain; Hamburg, Germany; Pasadena, CA; St. Andrews, Scotland; Barcelona, Spain; and Flagstaff, AZ. We are delighted to add Uppsala to this list.</br></br>
+	  Cool Stars is now a well established workshop, which gathers biennially about 400 worldwide experts in Low-Mass Stars, Solar Physics and Exoplanets, creating an stimulating cross-disciplinary exchange environment in these fields. Cool Star meetings have a long 		  tradition of presenting cutting-edge science, as shown by outstanding results such as the discovery of the first Extrasolar Planet and the first confirmed Brown Dwarf, which were both first announced in the Cool Stars 9 meeting celebrated in Florence, Italy in 1995. 
+          </p>
+	</div>
+      </div>
+   </section> <!-- Home end -->
+
+   <!-- News Section
+   ================================================== -->
+   <section id='news'>
+      <div class="row">
+        <div class="twelve columns">
+          <div class="row section-head">
+            <h1>News</h1>
+          </div>
+          <p align="justify"><b>21 July 2014</b></br>Celebration of the 45th anniversary of the landing of Apollo 11 astronauts on the Moon.
+          </p>
+          <p align="justify"><b>14 July 2014</b></br>France celebrates its National Day, commemorating the beginning of the French revolution on the 14 July 1789.
+          </p>
+          <p align="justify"><b>13 July 2014</b></br>Germany wins the FIFA World Cup against Argentina.
+          </p>
+	</div>
+      </div>
+   </section> <!-- Home end -->
+
+   <!-- Calendar
+   ================================================== -->
+   <section id="calendar">
+      <div class="row">
+         <div class="twelve columns">
+            <div class="row section-head">
+               <h1><a href="schedule">Calendar</a></h1>
+            </div>
+            <p align="justify">
+               The up-to-date schedule of the conference can be found on the web <a href="schedule">here</a> 
+	       or downloaded as a PDF file <a href="#calendar">here <i class="fa fa-download"></i></a>.
+            </p>
+         </div>
+      </div>
+   </section> <!-- Calendar End -->
+
+    <!-- Registration Section
+   ================================================== -->
+   <section id="registration">
+
+      <div class="row section-head">
+
+         <h1>Registration</h1>
+
+      </div>
+      <div class="row">
+         <div class="pricing-tables bgrid-thirds">
+            <div class="column">
+               <div class="price-block">
+                  <h3 class="plan-title"><i class="fa fa-thumbs-up"></i>Early</h3>
+                  <p class="plan-price">123 €</p>
+                  <ul>
+                     <p>available between </br>??/01/16 and ??/03/16</p>
+	          </ul>
+                  <footer class="plan-sign-up">
+                     <a class="button" href="http://www.astro.uu.se/~alavail/dev/cs19/form/reg-form.html" target="_blank">Register</a>
+                  </footer>
+               </div> <!-- End Price Block -->
+            </div> <!-- End Column -->
+
+            <div class="column">
+               <div class="price-block">
+                  <h3 class="plan-title"><i class="fa fa-star"></i>Normal</h3>
+                  <p class="plan-price">456 €</p>
+                  <ul>
+                     <p>available between </br>??/03/16 and ??/05/16</p>
+	          </ul>
+                  <footer class="plan-sign-up">
+                     <a class="button" href="http://www.astro.uu.se/~alavail/dev/cs19/form/reg-form.html" target="_blank">Register</a>
+                  </footer>
+               </div> <!-- End Price Block -->
+	   </div> <!-- End Column -->
+
+            <div class="column">
+               <div class="price-block">
+                  <h3 class="plan-title"><i class="fa fa-rocket"></i>On-site</h3>
+                  <p class="plan-price">789 €</p>
+                  <ul>
+                     <p>available between </br>??/06/16 and ??/06/16</p>
+	          </ul>
+                  <footer class="plan-sign-up">
+                     <a class="button" href="http://www.astro.uu.se/~alavail/dev/cs19/form/reg-form.html" target="_blank">Register</a>
+                  </footer>
+               </div> <!-- End Price Block -->
+	   </div> <!-- End Column -->
+         </div>
+      </div>
+
+      <div class="row">
+         <p>
+            <b>The registration fee includes:</b></br>
+       	    • Conference attendance and materials</br>
+	    • Access to astronomer-friendly magic  wireless internet</br>
+	    • Light snacks and delicious drinks during conference breaks</br>
+	    • Opening reception with wonderful wine</br>• Closing reception with typical surströmming</br>• Conference banquet full of swedish culture</br>
+	</p>	
+     </div>
+      
+   </section> <!-- Registration End -->
+
+   <!-- venue
+   ================================================== -->
+   <section id="venue">
+      <div class="row">
+         <div class="twelve columns">
+            <div class="row section-head">
+               <h1>Venue</h1>
+            </div>
+	    <p align="left"><b>UPPSALA KONSERT & KONGRESS</b></br>
+            <a href="http://www.ukk.se/In-English/" target="_blank">
+  	    Uppsala Konsert and Kongress (UKK) <i class="fa fa-external-link"></i></a> 
+            is Uppsala's own conference center, located in the very heart of the city. 
+            </p>
+            <img src="images/ukk.jpg" alt="" />
+	    <p align="right">Uppsala Konsert & Kongress building. &copy; UKK</p>
+	    <div align="center">
+ 	       <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=17.629752159118652%2C59.85470862873453%2C17.662453651428223%2C59.86733561534264&amp;layer=mapnik&amp;marker=59.8610227211644%2C17.646102905273438" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=59.8610&amp;mlon=17.6461#map=15/59.8610/17.6461">View Larger Map <i class="fa fa-external-link"></i></a></small>
+	    </div>
+	    
+	    <p align="left"><b>BOTANISKA TRÄDGÅRDEN — BOTANICAL GARDEN</b></br>
+ 	    <a href="http://www.botan.uu.se/Botaneng.html" target="_blank">
+            Uppsala's botanical garden <i class="fa fa-external-link"></i></a>
+            is among the most popular strolling places in our city. It is also where 
+	    Cool Stars 19 opening reception will take place.
+	    </p>
+            <img src="images/botaniska.jpg" alt="" />
+            <p align="right">Botanical garden. CC BY-SA 3.0 Per Enström</p>
+         </div>
+      </div>
+   </section> <!-- Calendar End -->
+  
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="row content">
+         <span><i class="quote-left fa fa-quote-left"></i></span>
+         <div class="text-container">
+            <div class="twelve columns flex-container">
+               <ul class="slides">
+                  <li>
+                     <blockquote>
+                        <p>It's a 106 miles to Chicago, we've got a full tank of gas, half a packet of cigarettes, it's dark and we're
+	         	 wearing sunglasses. Hit it. 
+                        </p>
+                        <cite>Elwood Blues</cite>
+                     </blockquote>
+                 </li> <!-- slide ends -->
+               </ul>
+         </div> <!-- div.flex-container ends -->
+      </div>  <!-- text-container ends -->
+      <span><i class="quote-right fa fa-quote-right"></i></span>
+     </div> <!-- row ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+   <!-- Footer
+   ================================================== -->
+   <footer>
+      <div class="row">    
+         <h3 align="center">Contact Us</h3>
+         <p align="center">Alexis Lavail</br>
+         <a href="mailto:alexis.lavail@physics.uu.se">alexis.lavail@physics.uu.se</a></p>
+
+      <p align="center" class="copyright"> Cool Stars 19 | adapted HTML5 template from <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></p>
+
+      <div id="go-top">
+          <a class="smoothscroll" title="Back to Top" href="#hero"><i class="fa fa-long-arrow-up"></i></a>
+      </div>
+      </br>
+      </div> <!-- Row End -->
+
+   </footer> <!-- Footer End-->
+
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/jquery.fitvids.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
