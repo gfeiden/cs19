@@ -4,8 +4,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>CS 19 | registration</title>
-        <script src="./js/register.js"></script>
-    	<link rel="stylesheet" href="form.css">
+        <script src="../js/register.js"></script>
+    	<link rel="stylesheet" href="./form.css">
     </head>
     
     <body>
@@ -14,7 +14,8 @@
 <i class="fa fa-arrow-circle-left "></i></a></h2>
      </div>
      <div id="form-div">
-        <form name="regForm" onsubmit="return validateForm()">
+        <!-- <form name="regForm" onsubmit="return validateForm()"> -->
+        <form name="regForm">
             <h1>Cool Stars 19 Registration</h1>
 
             <div>
@@ -33,33 +34,33 @@
                 <br/>
                 <label for="FirstName">First Name</label><br/>
                 <input class="reg-input" type="text" required id="FirstName" name="FirstName" maxlength="30" size="30" onblur="validateField(name)"/>
-                <span style="color: red; font-style: italic; display: none;" id="FirstNameError">You must declare your first name.</span>
+                <span id="FirstNameError"></span>
                 <br/>
                 <label for="MiddleName">Middle</label><br/>
                 <input class="reg-input" type="text" id="MiddleName" name="MiddleName" maxlength="1" size="2"/>
                 <br/>
                 <label for="Surname">Surname</label><br/>
                 <input class="reg-input" type="text" required id="Surname" name="Surname" maxlength="30" size="30" onblur="validateField(name)"/>
-                <span style="color: red; font-style: italic; display: none;" id="SurnameError">You must declare your surname.</span>
+                <span id="SurnameError"></span>
                 <br/>
                 <label for="Affil">Affiliation</label><br/>
                 <input class="reg-input" type="text" required id="Affil" name="Affil" maxlength="100" size="50" onblur="validateField(name)"/>
-                <span style="color: red; font-style: italic; display: none;" id="AffilError">You must declare your affiliation.</span>
+                <span id="AffilError"></span>
                 <br/>
                 <label for="Email">Email</label><br/>
                 <input class="reg-input" type="email" required id="Email" name="Email" size="50" onblur="validateEmail(name)"/>
-                <span style="color: red; font-style: italic; display: none;" id="EmailError"></span>
+                <span id="EmailError"></span>
                 <br/>
                 <label for="EmailConfirm">Confirm Email</label><br/>
                 <input class="reg-input" type="email" required id="EmailConfirm" name="EmailConfirm" size="50" onblur="confirmEmail(name)"/>
-                <span style="color: red; font-style: italic; display: none;" id="EmailConfirmError"></span>
+                <span id="EmailConfirmError"></span>
                 <br/>
                 <label for="Webpage">Personal Webpage</label><br/>
                 <input class="reg-input" type="text" id="Webpage" name="Webpage" size="50"/>
                 <br/>
                 <label for="AddL1">Address Line 1</label><br/>
                 <input class="reg-input" type="text" required id="AddL1" name="AddL1" size="50" onblur="validateField(name)"/>
-                <span style="color: red; font-style: italic; display: none;" id="AddL1Error"></span>
+                <span id="AddL1Error"></span>
                 <br/>
                 <span style="color: red;" id="requiredField"></span>
                 <label for="AddL2">Address Line 2</label><br/>
@@ -69,11 +70,12 @@
                 <input class="reg-input" type="text" id="AddL3" name="AddL3" size="50"/>
                 <br/>
                 <label for="City">City</label><br/>
-                <input class="reg-input" type="text" id="City" name="City" size="30"/>
+                <input class="reg-input" type="text" id="City" name="City" size="30" onblur="validateField(name)"/>
+                <span id="CityError"></span>
                 <br/>
-                <span style="color: red;" id="requiredField"></span>
                 <label for="Zip">Postal Code</label><br/>
-                <input class="reg-input" type="text" id="Zip" name="Zip" size="15"/>
+                <input class="reg-input" type="text" id="Zip" name="Zip" size="15" onblur="validateField(name)"/>
+                <span id="ZipError"></span>
                 <br/>
                 <span style="color: red;" id="requiredField"></span>
                 <label for="country-selector">Country</label><br/>
@@ -383,8 +385,9 @@
 
                 </div>
             </div>
-            <br/> 
-            <input type="reset"/ class="button"> <input type="submit" class="button" id="submit"/>
+            <br/>
+            <!-- Submit button purposely disabled, enable before launch --> 
+            <input type="reset" class="button"> <input type="" class="button" id="submit" value="Submit"/>
         </form>
       </div>
     </body>
