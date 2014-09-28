@@ -21,7 +21,7 @@
 
    /* Call To Action Section
    ------------------------------------------------------------------- */
-   #call-to-action h2 { font: 26px/36px 'a-bold', sans-serif; }
+   #call-to-action h2 { font: 26px/36px 'robotomedium', sans-serif; }
    #call-to-action p { font-size: 16px; }
 
 }
@@ -31,7 +31,7 @@
 @media only screen and (max-width: 900px) {
 
 	/* General and Common Styles */
-	.section-head h1 { font: 18px/30px 'robotomedium', sans-serif; }
+	.section-head h1 { font: 30px/30px 'robotomedium', sans-serif; }
 
    /* Header Styles
    ------------------------------------------------------------------ */
@@ -42,7 +42,7 @@
    ------------------------------------------------------------------ */
    #hero { padding-top: 60px; }
    .hero-text { width: 88%; }
-   .hero-text h1 { font: 35px/1.2em 'a-bold', sans-serif; }
+   .hero-text h1 { font: 35px/1.2em 'robotomedium', sans-serif; }
    .hero-text p { font: 15px/30px 'robotoregular', sans-serif; } 
   
    /* nav-wrap */
@@ -68,8 +68,8 @@
       font-size: 66px;
       line-height: 66px;
    }
-   #call-to-action h2 { font: 25px/36px 'a-bold', sans-serif; } 
-   #call-to-action .action .button { font: 14px/24px 'a-bold', sans-serif; } 
+   #call-to-action h2 { font: 25px/36px 'robotoregular', sans-serif; } 
+   #call-to-action .action .button { font: 14px/24px 'robotoregular', sans-serif; } 
    #call-to-action p { font-size: 15px; }
 
    /* Testimonials Section
@@ -98,11 +98,11 @@
 
 	/* General and Common Styles */
 	.section-head { padding: 0 30px; }
-	body{font-size:14px;}
+	body{font-size:16px;}
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap {
-      font: 11px 'robotomedium', sans-serif;
+      font: 12px 'robotomedium', sans-serif;
       background: transparent !important;
       letter-spacing: 1px;  
       color: #515968;
@@ -192,7 +192,7 @@
    -------------------------------------------------------------------- */
    #hero { padding-top: 48px; }
    .hero-text { width: 92%; }
-   .hero-text h1 { font: 31px/1.2em 'a-bold', sans-serif; }
+   .hero-text h1 { font: 32px/1.2em 'robotoregular', sans-serif; }
    .hero-text p { font: 14px/24px 'robotoregular', sans-serif; } 
 
    /* Hero CTA Buttons */
@@ -201,7 +201,7 @@
       display: block;
       width: 70%;
       margin: 0 auto 18px auto;
-      font: 13px/24px 'a-bold', sans-serif;
+      font: 13px/24px 'robotoregular', sans-serif;
       letter-spacing: 1.5px;
    }
 
@@ -231,7 +231,7 @@
    ----------------------------------------------------------------- */
    #call-to-action { text-align: center; }
    #call-to-action h1 {
-      font: 16px/24px 'a-bold', sans-serif;;
+      font: 16px/24px 'robotoregular', sans-serif;;
       text-align: center;
       margin-bottom: 30px;
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
@@ -337,7 +337,7 @@ ul#nav li {
    -------------------------------------------------------------------- */
    #hero { padding-top: 42px; }
    .hero-text { width: 96%; }
-   .hero-text h1 { font: 25px/1.2em 'a-bold', sans-serif; }
+   .hero-text h1 { font: 25px/1.2em 'robotoregular', sans-serif; }
    .hero-text p { font: 13px/24px 'robotoregular', sans-serif; } 
 
    /* Testimonials Section

@@ -169,8 +169,8 @@ body {
    background: #fff;
    font-family: 'helvetica', sans-serif;
    font-weight: normal;
-   font-size: 16px;
-   line-height: 30px;
+   font-size: 18px;
+   line-height: 36px;
 	color: #333;
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
@@ -204,7 +204,7 @@ p.lead {
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
 the body tag due to rendering problems in some browsers */
 em { font: 15px/30px 'roboto-italic', sans-serif; }
-strong, b { font: 15px/30px 'robotomedium', sans-serif; }
+strong, b { font: 20px/30px 'robotomedium', sans-serif; }
 small { font-size: 11px; line-height: inherit; }
 
 /*	Blockquotes */
@@ -297,7 +297,7 @@ abbr:hover { cursor: help; }
 	margin: 0;
 	padding: 14px 6px 0 0;
 	font-size: 84px;
-	font-family: /* Copperplate */ 'a-bold', sans-serif;
+	font-family: /* Copperplate */ 'robotomedium', sans-serif;
    line-height: 60px;
 	text-indent: 0;
 	background: transparent;
@@ -488,7 +488,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-   font: 14px/24px 'a-bold', sans-serif;
+   font: 14px/24px 'robotomedium', sans-serif;
    background: #2c5977;
    color: #fff;
    display: inline-block;   

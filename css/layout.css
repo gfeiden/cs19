@@ -35,7 +35,7 @@ iframe{
    text-align: center;
 }
 .section-head h1 {
-   font: 30px/36px 'robotomedium', sans-serif;
+   font: 40px/54px 'robotomedium', sans-serif;
    color: #333;
    text-transform: uppercase;
    letter-spacing: 1px;
@@ -137,7 +137,7 @@ ul#nav li.current a { color: #fff; }
 
 #hero {
    padding-top: 66px;
-   background: #333;
+   background: #0B486B;
    overflow: hidden;
 }
 
@@ -151,7 +151,7 @@ ul#nav li.current a { color: #fff; }
    margin: 54px auto 24px auto;
 }
 .hero-text h1 {
-   font-family: 'a-bold', sans-serif; 
+   font-family: 'robotomedium', sans-serif; 
    color: #fff;
    padding: 0;
    margin: 0;
@@ -217,7 +217,7 @@ ul#nav li.current a { color: #fff; }
   font-size: 26px;
 }
 .plan-price {
-   font-family: 'a-bold', sans-serif;
+   font-family: 'helvetica', sans-serif;
    font-size: 30px;
    color: #222;
    padding: 6px 30px 6px 30px;
@@ -433,7 +433,7 @@ footer .copyright {
 }
 
 .top-text h1 {
-   font: 40px/1.2em  'a-bold', sans-serif;
+   font: 40px/1.2em  'robotomedium', sans-serif;
    color: #fff;
    padding: 0;
    margin: 0;
