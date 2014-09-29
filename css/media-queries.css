@@ -98,7 +98,7 @@
 
 	/* General and Common Styles */
 	.section-head { padding: 0 30px; }
-	body{font-size:16px;}
+	body{font-size:14px;}
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap {
@@ -332,7 +332,6 @@ ul#nav li {
       float: none;
       right: 0;             
    }
-
    /* Hero Section
    -------------------------------------------------------------------- */
    #hero { padding-top: 42px; }
