@@ -31,7 +31,7 @@
 @media only screen and (max-width: 900px) {
 
 	/* General and Common Styles */
-	.section-head h1 { font: 30px/30px 'robotomedium', sans-serif; }
+	.section-head h1 { font: 30px/30px 'robotobold', sans-serif; }
 
    /* Header Styles
    ------------------------------------------------------------------ */
@@ -42,7 +42,7 @@
    ------------------------------------------------------------------ */
    #hero { padding-top: 60px; }
    .hero-text { width: 88%; }
-   .hero-text h1 { font: 35px/1.2em 'robotomedium', sans-serif; }
+   .hero-text h1 { font: 35px/1.2em 'robotobold', sans-serif; }
    .hero-text p { font: 15px/30px 'robotoregular', sans-serif; } 
   
    /* nav-wrap */
