@@ -1,15 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html>
     <head>
-        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
         <title>CS 19 | Abstract Submission</title>
-        <script type="text/javascript" src="../js/abstract.js">
-        <script type="text/javascript" src="../../MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-        <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-        </script>
         <link rel="stylesheet" href="./form.css">
+        <script type="text/javascript" src="../js/abstract.js"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                tex2jax: {
+                    inlineMath: [["$","$"], ["\\(","\\)"]]
+                }
+            });
+        </script>
+        <script type="text/javascript" src="../../MathJax/MathJax.js?config=TeX-AMS_HTML-full"></script>
     </head>
     
     <body>
@@ -25,18 +30,20 @@
             <form name="abstractSubmission">
                 <br/><br/>
                 
-                <label for="AtOpening">Abstract Type: </label>
+                <label for="AtOpening">Type: </label>
                 <input type="radio" name="AbstractType" value="Invited" onclick="abstractToggle(name)"/><label>&nbsp;Invited Talk</label>
                 <input type="radio" name="AbstractType" value="Talk" onclick="abstractToggle(name)"/><label>&nbsp;Contributed Talk</label>
                 <input type="radio" name="AbstractType" value="Poster" onclick="abstractToggle(name)"/><label>&nbsp;Contributed Poster</label>
                 
                 <br/><br/>
                 
-                <textarea rows="20" cols="70" name="abstract" wrap="soft">
-                </textarea>
+                <textarea id="abstract" rows="20" cols="70" name="abstract" value=""></textarea>
             </form>
+            <button onclick="abstractPreview()">Preview</button> <button onclick="abstractReset()">Reset</button>
             
-            <br/>
+            <br/><br/>
+            <h2>Abstract Preview</h2>
+            <div id="abstractPreview"></div>
             <br/>
             
         </div> 
