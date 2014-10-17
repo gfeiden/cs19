@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>CS 19 | Abstract Submission</title>
+        <script type="text/javascript" src="../js/abstract.js">
+        <script type="text/javascript" src="../../MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <link rel="stylesheet" href="./form.css">
+    </head>
+    
+    <body>
+    
+        <div id="hero-div">
+	        <h2 align="right">
+	            <a href="http://www.coolstars19.com">back to CS 19 homepage <i class="fa fa-arrow-circle-left "></i></a>
+            </h2>
+        </div>
+        
+        <div id="form-div">
+            <!-- <form name="regForm" onsubmit="return validateForm()"> -->
+            <form name="abstractSubmission">
+                <br/><br/>
+                
+                <label for="AtOpening">Abstract Type: </label>
+                <input type="radio" name="AbstractType" value="Invited" onclick="abstractToggle(name)"/><label>&nbsp;Invited Talk</label>
+                <input type="radio" name="AbstractType" value="Talk" onclick="abstractToggle(name)"/><label>&nbsp;Contributed Talk</label>
+                <input type="radio" name="AbstractType" value="Poster" onclick="abstractToggle(name)"/><label>&nbsp;Contributed Poster</label>
+                
+                <br/><br/>
+                
+                <textarea rows="20" cols="70" name="abstract" wrap="soft">
+                </textarea>
+            </form>
+            
+            <br/>
+            <br/>
+            
+        </div> 
+        
+    </body>
+    
+</html>
