@@ -30,20 +30,45 @@
             <form name="abstractSubmission">
                 <br/><br/>
                 
-                <label for="AtOpening">Type: </label>
-                <input type="radio" name="AbstractType" value="Invited" onclick="abstractToggle(name)"/><label>&nbsp;Invited Talk</label>
-                <input type="radio" name="AbstractType" value="Talk" onclick="abstractToggle(name)"/><label>&nbsp;Contributed Talk</label>
-                <input type="radio" name="AbstractType" value="Poster" onclick="abstractToggle(name)"/><label>&nbsp;Contributed Poster</label>
-                
+                <label for="AbstractType">type: &nbsp;&nbsp;&nbsp; </label>
+                <input type="radio" name="AbstractType" value="Invited" onclick="abstractToggle(name)"/><label>&nbsp;invited talk&nbsp;&nbsp;</label>
+                <input type="radio" name="AbstractType" value="Talk" onclick="abstractToggle(name)"/><label>&nbsp;contributed talk&nbsp;&nbsp;</label>
+                <input type="radio" name="AbstractType" value="Poster" onclick="abstractToggle(name)"/><label>&nbsp;contributed poster</label>
                 <br/><br/>
                 
+                <label for="title">title</label>
+                <br/>
+                <input id="title" name="title" type="text" maxlength="100" size="70" />
+                <br/><br/>
+                
+                <label for="firstauthor">first author</label>
+                <br/>
+                <input id="firstauthor" name="firstauthor" type="text" maxlength="70" size="70" />
+                <br/><br/>
+                
+                <label for="authorID">author id</label>
+                <br/>
+                <input id="authorID" name="authorID" type="text" maxlength="8" size="70" />
+                <br/><br/>
+                
+                <label for="coauthors">co-authors <span style="font-size: 12pt">(comma separated)</span></label>
+                <textarea id="coauthors" rows="1" cols="70" name="coauthors" value=""></textarea>
+                <br/><br/>
+                
+                <label for="abstract">abstract <span style="font-size: 12pt">(max. 250 words)</span></label>
                 <textarea id="abstract" rows="20" cols="70" name="abstract" value=""></textarea>
+                
             </form>
             <button onclick="abstractPreview()">Preview</button> <button onclick="abstractReset()">Reset</button>
             
             <br/><br/>
             <h2>Abstract Preview</h2>
-            <div id="abstractPreview"></div>
+            <div id="preview">
+                <h3 id="titlePreview"></h3>
+                <div id="authorPreview"></div><div id="coauthorPreview"></div>
+                <br/>
+                <p id="abstractPreview"></p>
+            </div>
             <br/>
             
         </div> 
