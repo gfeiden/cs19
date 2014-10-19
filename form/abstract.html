@@ -55,13 +55,15 @@
                 <textarea id="coauthors" rows="1" cols="70" name="coauthors" value=""></textarea>
                 <br/><br/>
                 
-                <label for="abstract">abstract <span style="font-size: 12pt">(max. 250 words)</span></label>
-                <textarea id="abstract" rows="20" cols="70" name="abstract" value=""></textarea>
+                <label for="abstract">abstract <span style="font-size: 12pt">(max. 1650 chars.)</span></label>
+                <textarea id="abstract" rows="20" cols="70" name="abstract" value="" maxlength = "1650"></textarea>
                 
+                <!--<input type="submit" class="button" id="submit" value="Submit" style="float: right; margin-top: 3px;" />-->
             </form>
-            <button onclick="abstractPreview()">Preview</button> <button onclick="abstractReset()">Reset</button>
+            <button class="button" onclick="abstractPreview()" style="margin-top: 5px;">Preview</button> 
+            <button class="button" onclick="abstractReset()" style="margin-top: 5px;">Reset</button>
             
-            <br/><br/>
+            <br/><br/><br/>
             <h2>Abstract Preview</h2>
             <div id="preview">
                 <h3 id="titlePreview"></h3>

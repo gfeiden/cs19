@@ -26,8 +26,8 @@ h2 a {
 	text-decoration:none;
 	color:#ddd;
 }
-label,span {
-	color:#ddd;
+label {
+	color: #ddd;
 	font-family: Roboto, Arial, sans-serif;
   	font-weight:500;
 	font-size:20px;

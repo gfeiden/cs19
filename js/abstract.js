@@ -15,6 +15,7 @@ function abstractPreview() {
     frame.style.backgroundColor = "#eeeeee";
     frame.style.padding = "5px 10px 10px 10px";
     frame.style.borderRadius = "5px";
+    frame.style.lineHeight = "120%";
       
     // format title
     title.style.fontWeight = "normal";
