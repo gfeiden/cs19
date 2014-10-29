@@ -340,7 +340,7 @@
             	<input type="radio" id="AtOpening_Attending" name="AtOpening" value="Attending" onclick="allowGuests(name)"/> <label>&nbsp;Attending</label>
             	<input class="radio-choice" type="radio" id="AtOpening_NotAttending" name="AtOpening" value="Not Attending" onclick="allowGuests(name)"/> &nbsp;<label>Not Attending</label>
             	<br/>
-            	<label for="AtOpening">Accompanying guests at the opening reception</label><br/>
+            	<label for="AtOpening">Accompanying guests at the opening reception?</label><br/>
             	<input type="radio" id="AtOpeningGuest_No" name="AtOpeningGuest" value="No" onclick="guestToggle(name)"/> <label>&nbsp;No</label>
             	<input type="radio" id="AtOpeningGuest_Yes" name="AtOpeningGuest" value="Yes" onclick="guestToggle(name)"/> <label>&nbsp;Yes</label>
             	<span> &nbsp;&nbsp;|&nbsp;&nbsp;If Yes, how many guests (20€ per guest)?&nbsp;</span><input class="guest-input" type="text" disabled="true" id="AtOpeningGuestN" size="3" maxlength="2"/>
@@ -356,6 +356,7 @@
             	<span> &nbsp;&nbsp;|&nbsp;&nbsp;If Yes, how many guests (60€ per guest)?&nbsp;</span><input class="guest-input" type="text" disabled="true" id="AtBanquetGuestN" size="3" maxlength="2"/>
             	<br/>
             </div>
+	    <img src="wtf.svg" width="10%">
             <br/>
             <!-- Submit button purposely disabled, enable before launch --> 
             <input type="reset" class="button"> <input type="" class="button" id="submit" value="Submit"/>
