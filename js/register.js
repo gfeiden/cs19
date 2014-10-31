@@ -45,6 +45,15 @@ function validateForm() {
     }
 }
 
+function isPositive(input) {
+    var entry = document.getElementById(input);
+    var field = document.getElementById(input + 'Error');
+    
+    if (parseInt(entry.value) < 0 || parseInt(entry.value) == Nan) {
+        entry.value = 0;
+    }
+}
+
 function validateField(input) {
     var re = /[A-Za-z -']/;
     var entry = document.getElementById(input);
@@ -52,21 +61,24 @@ function validateField(input) {
     if (entry.value == null || entry.value == "") {
         // flag as a required field
         field.innerHTML = "";
-        field.className = "fa fa-flag";
+        field.className = "fa fa-times";
+        field.style.fontSize = "27px";
         field.style.color = '#c8201e';
         entry.style.border = "3px solid #c8201e";
         return false;
     } else if (!re.test(entry.value)) {
     	// flag as invalid characters
     	field.innerHTML = "";
-    	field.className = "fa fa-flag";
+    	field.className = "fa fa-times";
+    	field.style.fontSize = "27px";
     	field.style.color = '#c8201e';
     	entry.style.border = "3px solid #c8201e";
     	return false;
     } else {
         // mark as valid
         field.innerHTML = "";
-        field.className = "fa fa-thumbs-up";
+        field.className = "fa fa-check";
+        field.style.fontSize = "27px";
         field.style.color = "#4CBB17";
         entry.style.border = "3px solid rgba(0,0,0,0)";
         return true;
@@ -82,27 +94,31 @@ function validateEmail(input){
     if (email.value == null || email.value == "") {
         // check if anything was entered
         field.innerHTML = "";
-        field.className = "fa fa-flag";
+        field.className = "fa fa-times";
+        field.style.fontSize = "27px";
         field.style.color = "#c8201e";
         email.style.border = '3px solid #c8201e';
         return false;
     } else if (!re.test(email.value)) {
         // confirm email is made up of correct characters
         field.innerHTML = "";
-        field.className = "fa fa-flag";
+        field.className = "fa fa-times";
+        field.style.fontSize = "27px";
         field.style.color = "#c8201e";
         email.style.border = '3px solid #c8201e';
         return false;
     } else if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 > email.value.length) {
         // confirm that email appears to have proper character setup
         field.innerHTML = "";
-        field.className = "fa fa-flag";
+        field.className = "fa fa-times";
+        field.style.fontSize = "27px";
         field.style.color = "#c8201e";
         email.style.border = '3px solid #c8201e';
         return false;
     } else {
         field.innerHTML = "";
-        field.className = "fa fa-thumbs-up";
+        field.className = "fa fa-check";
+        field.style.fontSize = "27px";
         field.style.color = "#4CBB17";
         email.style.border = "3px solid rgba(0,0,0,0)";
         return true;
@@ -115,7 +131,8 @@ function confirmEmail(input){
     var email2 = document.getElementById(input);
     if (!validateEmail('Email')) {
         field.innerHTML = "";
-        field.className = "fa fa-flag";
+        field.className = "fa fa-times";
+        field.style.fontSize = "27px";
         field.style.color = "#c8201e";
         email2.style.border = '3px solid #c8201e';
         return false;
@@ -123,14 +140,16 @@ function confirmEmail(input){
     if (email2.value != document.getElementById('Email').value) {
         // email addresses do not match -- invalidate
         field.innerHTML = "";
-        field.className = "fa fa-flag";
+        field.className = "fa fa-times";
+        field.style.fontSize = "27px";
         field.style.color = "#c8201e";
         email2.style.border = '3px solid #c8201e';
         return false;
     } else {
         // email addresses match -- validate
         field.innerHTML = "";
-        field.className = "fa fa-thumbs-up";
+        field.className = "fa fa-check";
+        field.style.fontSize = "27px";
         field.style.color = "#4CBB17";
         email2.style.border = "3px solid rgba(0,0,0,0)";
         return true;
@@ -159,6 +178,21 @@ function guestToggle(input) {
 		Nguest.value = "";
 		Nguest.disabled = true;	
 	}
+}
+
+// Bug: Student selecting 'Yes' does not enable radio button
+function nationCard(input) {
+    if (document.getElementById(input + '_No').checked) {
+        document.getElementById('nationCard_Yes').disabled = true;
+        document.getElementById('nationCard_No').disabled = false;
+        document.getElementById('nationCard_No').checked = true;
+    } else if (document.getElementById(input + '_Yes').checked) {
+        document.getElementById('nationCard_Yes').disabled = false;
+        document.getElementById('nationCard_No').checked = true;
+    } else {
+        document.getElementById('nationCard_No').checked = true;
+        document.getElementById('nationCard_Yes').disabled = true;
+    }
 }
 
 function calcRegFee() {

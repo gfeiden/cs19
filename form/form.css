@@ -133,6 +133,16 @@ h2 a:hover {
 	color:#fff;
 	font-family: Roboto, Arial, sans-serif;
   	font-weight:500;
+  	
+  	padding-left: 10px;
+  	padding-right: 5px;
+  	padding-bottom: 5px;
+}
+
+input[type=radio]:not(old) + label {
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 5px;
 }
 
 .focused{

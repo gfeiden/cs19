@@ -9,18 +9,22 @@
     </head>
     
     <body>
-     <div id="hero-div">
-	<h2 align="right"><a href="http://www.coolstars19.com">back to CS 19 homepage 
-<i class="fa fa-arrow-circle-left "></i></a></h2>
-     </div>
-     <div id="form-div">
+    
+    <div id="hero-div">
+	    <h2 align="right"><a href="http://www.coolstars19.com">back to CS 19 homepage <i class="fa fa-arrow-circle-left "></i></a></h2>
+    </div>
+    
+    <div id="form-div">
         <!-- <form name="regForm" onsubmit="return validateForm()"> -->
         <form name="regForm">
             <h1>Cool Stars 19 Registration</h1>
 
             <div>
                 <br/>
-                <h2> <i class="fa fa-rocket"></i> Personal Information</h2>
+                
+                <!-- PERSONAL INFORMATION SECTION -->
+                
+                <h2> <i class="fa fa-tag"></i> Personal Information</h2>
                 
                 <label for="Title">Title</label><br/>
                 <select class="choice" name="Title" id="Title">
@@ -331,36 +335,57 @@
                     <option value="Zambia" data-alternative-spellings="ZM">Zambia</option>
                     <option value="Zimbabwe" data-alternative-spellings="ZW">Zimbabwe</option>
                 </select>
+            	<br/><br/>
             	
+            	<!-- SOCIAL ACTIVITIES SECTION -->
             	
-            	<br/>
             	<h2><i class="fa fa-glass"></i> Social Activities</h2>
             	
             	<label for="AtOpening">Opening reception</label><br/>
-            	<input type="radio" id="AtOpening_Attending" name="AtOpening" value="Attending" onclick="allowGuests(name)"/> <label>&nbsp;Attending</label>
-            	<input class="radio-choice" type="radio" id="AtOpening_NotAttending" name="AtOpening" value="Not Attending" onclick="allowGuests(name)"/> &nbsp;<label>Not Attending</label>
-            	<br/>
+            	<input type="radio" id="AtOpening_Attending" name="AtOpening" value="Attending" onclick="allowGuests(name)" /> <label>&nbsp;Attending</label>
+            	<input class="radio-choice" type="radio" id="AtOpening_NotAttending" name="AtOpening" value="Not Attending" onclick="allowGuests(name)" checked/> &nbsp;<label>Not Attending</label>
+            	<br/><br/>
+            	
             	<label for="AtOpening">Accompanying guests at the opening reception?</label><br/>
-            	<input type="radio" id="AtOpeningGuest_No" name="AtOpeningGuest" value="No" onclick="guestToggle(name)"/> <label>&nbsp;No</label>
+            	<input type="radio" id="AtOpeningGuest_No" name="AtOpeningGuest" value="No" onclick="guestToggle(name)" checked/> <label>&nbsp;No</label>
             	<input type="radio" id="AtOpeningGuest_Yes" name="AtOpeningGuest" value="Yes" onclick="guestToggle(name)"/> <label>&nbsp;Yes</label>
-            	<span> &nbsp;&nbsp;|&nbsp;&nbsp;If Yes, how many guests (20€ per guest)?&nbsp;</span><input class="guest-input" type="text" disabled="true" id="AtOpeningGuestN" size="3" maxlength="2"/>
-            	<br/>
+            	<label> &nbsp;&nbsp;|&nbsp;&nbsp;If Yes, how many guests? (20€ per guest)&nbsp;</label><input class="guest-input" type="text" disabled="true" id="AtOpeningGuestN" name="AtOpeningGuestN" size="3" maxlength="2" onblur="isPositive(name)"/><span id="AtOpeningGuestNError"></span>
+            	<br/><br/><br/>
             	
             	<label for="AtBanquet">Conference banquet</label><br/>
             	<input type="radio" id="AtBanquet_Attending" name="AtBanquet" value="Attending" onclick="allowGuests(name)"/> <label>&nbsp;Attending</label>
-            	<input type="radio" id="AtBanquet_NotAttending" name="AtBanquet" value="Not Attending" onclick="allowGuests(name)"/> <label>&nbsp;Not Attending</label>
-            	<br/>
+            	<input type="radio" id="AtBanquet_NotAttending" name="AtBanquet" value="Not Attending" onclick="allowGuests(name)" checked/> <label>&nbsp;Not Attending</label>
+            	<br/><br/>
+            	
             	<label for="AtBanquet">Accompanying guests at the conference banquet?</label><br/>
-            	<input type="radio" id="AtBanquetGuest_No" name="AtBanquetGuest" value="No" onclick="guestToggle(name)"> <label>&nbsp;No</label>
+            	<input type="radio" id="AtBanquetGuest_No" name="AtBanquetGuest" value="No" onclick="guestToggle(name)" checked> <label>&nbsp;No</label>
             	<input type="radio" id="AtBanquetGuest_Yes" name="AtBanquetGuest" value="Yes" onclick="guestToggle(name)"> <label>&nbsp;Yes</label>
-            	<span> &nbsp;&nbsp;|&nbsp;&nbsp;If Yes, how many guests (60€ per guest)?&nbsp;</span><input class="guest-input" type="text" disabled="true" id="AtBanquetGuestN" size="3" maxlength="2"/>
-            	<br/>
+            	<label> &nbsp;&nbsp;|&nbsp;&nbsp;If Yes, how many guests? (60€ per guest)&nbsp;</label><input class="guest-input" type="text" disabled="true" id="AtBanquetGuestN" size="3" maxlength="2"/>
+            	<br/><br/>
+            	
+            	<h2><i class="fa fa-globe"></i> Logistics</h2>
+            	
+            	<label for="Student">Are you a student?</label><br/>
+            	<input class="radio-choice" type="radio" id="Student_Yes" name="Student" value="Yes" onclick="nationCard(name)"/> <label>&nbsp;Yes</label>
+            	<input class="radio-choice" type="radio" id="Student_No" name="Student" value="No" onclick="nationCard(name)" checked/> <label>&nbsp;No</label>
+            	<br/><br/>
+            	
+            	<label for="Student">If Yes, would you like a guest Nation Card? &nbsp; <i class="fa fa-question-circle"></i> </label><br/>
+            	<input class="radio-choice" type="radio" id="nationCard_Yes" name="nationCard" value="Yes" /> <label> &nbsp;Yes</label>
+            	<input class="radio-choice" type="radio" id="nationCard_No" name="nationCard" value="No" /> <label> &nbsp;No</label>
+            	<br/><br/>
+            	
             </div>
-	    <img src="wtf.svg" width="10%">
+	        
             <br/>
-            <!-- Submit button purposely disabled, enable before launch --> 
-            <input type="reset" class="button"> <input type="" class="button" id="submit" value="Submit"/>
+            <!-- Submit button purposely disabled, enable before launch  <img src="wtf.svg" width="4%"> --> 
+            <input type="reset" class="button"> <input type="submit" class="button" id="submit" value="Preview"/>
         </form>
       </div>
+    <script>
+        allowGuests("AtOpening");
+        allowGuests("AtBanquet");
+        nationCard("Student");
+    </script>
     </body>
 </html>
