@@ -39,6 +39,28 @@ function validateForm() {
     }
 }
 
+function checkResearchTags() {
+    var tags =["abundances", "astrometry", "astrobiology", "atmospheres", "BDs", "interferometry",
+               "interiors", "magnetism", "observational", "parameters", "photometry", "planetary",
+               "seismology", "simulation", "spectroscopy", "stellar", "solar", "winds"];
+    
+    var count = 0;
+    for (var i = 0; i < tags.length; i++) {
+        if ( count != 4 && document.getElementById(tags[i]).checked) {
+            document.getElementById(tags[i]).disabled = false;
+            count++;
+            if (count == 4) {
+                i = 0;
+            }
+        } else if (count == 4 && !document.getElementById(tags[i]).checked) {
+            document.getElementById(tags[i]).disabled = true;
+        } else {
+            document.getElementById(tags[i]).disabled = false;
+        }
+    }
+    
+}
+
 function isPositive(input) {
     var entry = document.getElementById(input);
     var field = document.getElementById(input + 'Error');

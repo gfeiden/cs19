@@ -164,9 +164,9 @@ input[type=radio]:not(old) + label {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-  margin-top:-4px;
-  margin-right:10px;
-  font-weight:700;
+    margin-top:-4px;
+    margin-right:10px;
+    font-weight:700;
 	text-transform:uppercase;
 }
 .button:hover{
@@ -188,6 +188,16 @@ textarea {
 input:hover, textarea:hover,
 input:focus, textarea:focus {
 	background-color:white;
+}
+
+span.tags {
+    display: inline-block;
+    color: #ddd;
+	font-family: Roboto, Arial, sans-serif;
+  	font-weight:500;
+	font-size:20px;
+	
+    width: 170px;
 }
 
 
