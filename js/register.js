@@ -4,32 +4,26 @@
 
 function validateForm() {
     // client-side validation of all required form fields
+    var fields = ['FirstName', 'Surname', 'Affil', 'AddL1', 'City', 'Zip'];
     var err = 0;
-    if (!validateField('FirstName')) {
-        err++;
+    
+    // validate ordinary text input fields
+    var num_fields = fields.length;
+    for (var i = 0; i < num_fields; i++) {
+        if (!validateField(fields[i])) {
+            err++;
+        }
     }
-    if (!validateField('Surname')) {
-        err++;
-    }
-    if (!validateField('Affil')) {
-    	err++;
-    }
+    
+    // validate email and confirmation fields
     if (!validateEmail('Email')) {
         err++;
     }
     if (!confirmEmail('EmailConfirm')) {
         err++;
     }
-    if (!validateField('AddL1')) {
-    	err++;
-    }
-    if (!validateField('City')) {
-        err++;
-    }
-    if (!validateField('Zip')) {
-        err++;
-    }
     
+    // validate form based on number of detected errors
     if (err > 0) {
     	if (err == 1) {
     		var errWarn = err + " error was detected. \n\n Please fill in the required field or fix the error.";
@@ -181,18 +175,29 @@ function guestToggle(input) {
 }
 
 // Bug: Student selecting 'Yes' does not enable radio button
-function nationCard(input) {
-    if (document.getElementById(input + '_No').checked) {
-        document.getElementById('nationCard_Yes').disabled = true;
-        document.getElementById('nationCard_No').disabled = false;
-        document.getElementById('nationCard_No').checked = true;
-    } else if (document.getElementById(input + '_Yes').checked) {
-        document.getElementById('nationCard_Yes').disabled = false;
-        document.getElementById('nationCard_No').checked = true;
+function getNationCard(input) {
+    var nots = document.getElementById(input + "_No").checked;
+    var stud = document.getElementById(input + "_Yes").checked;
+    var nation_yes = document.getElementById("nationCard_Yes");
+    var nation_no = document.getElementById("nationCard_No");
+    
+    if (nots) {
+        nation_yes.disabled = true;
+        nation_yes.checked = false;
+        nation_no.disabled = false;
+        nation_no.checked = true;
+    } else if (stud) {
+        nation_yes.disabled = false;
+        nation_yes.checked = true;
+        nation_no.disabled = false;
+        nation_no.checked = false;
     } else {
-        document.getElementById('nationCard_No').checked = true;
-        document.getElementById('nationCard_Yes').disabled = true;
+        nation_yes.disabled = true;
+        nation_yes.checked = false;
+        nation_no.disabled = false;
+        nation_no.checked = true;
     }
+    
 }
 
 function calcRegFee() {
