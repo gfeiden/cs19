@@ -391,20 +391,36 @@
             	<label> &nbsp;&nbsp;|&nbsp;&nbsp;If Yes, how many guests? (60€ per guest)&nbsp;</label><input class="guest-input" type="text" disabled="true" id="AtBanquetGuestN" name="AtBanquetGuestN" size="3" maxlength="2" onblur="isPositive(name)"/>
             	<br/><br/><br/>
             	
-            	<!-- LOGISTICS SECTION -->
+            	<!-- STUDENT SECTION -->
             	
-            	<h2><i class="fa fa-globe"></i> Logistics</h2>
+            	<h2><i class="fa fa-eur"></i> Students</h2>
             	
             	<label for="Student">Are you a student?</label><br/>
-            	<input type="radio" id="Student_Yes" name="Student" value="Yes" onclick="getNationCard(name)" /> <label>&nbsp;Yes</label>
-            	<input type="radio" id="Student_No" name="Student" value="No" onclick="getNationCard(name)" checked /> <label>&nbsp;No</label>
+            	<input type="radio" id="Student_Yes" name="Student" value="Yes" onclick="toggleStudent(name)" /> <label>&nbsp;Yes</label>
+            	<input type="radio" id="Student_No" name="Student" value="No" onclick="toggleStudent(name)" checked /> <label>&nbsp;No</label>
             	<br/><br/>
             	
-            	<label for="nationCard">If Yes, would you like a guest Nation Card? &nbsp; <i class="fa fa-question-circle" title="This will describe what a Nation Card is and what it gets you." onclick="showDiv()"></i> </label><div id="wtf" style="visibility: hidden;">This will explain about a nation card with lots of text to make sure that the final frame will be filled.</div><br/>
+            	<label for="nationCard">If Yes, would you like a guest Nation Card? &nbsp; <i class="fa fa-question-circle" title="This will describe what a Nation Card is and what it gets you." onclick="showDiv()"></i> </label><div id="wtf" style="visibility: hidden;">This will explain about a nation card with lots of text to make sure that the final frame will be filled. Just continuing to fill this with useless text to see if any bugs arise with the location of buttons and other elements in the web form, because you never know!</div><br/>
             	<input type="radio" id="nationCard_Yes" name="nationCard" value="Yes" /> <label> &nbsp;Yes</label>
             	<input type="radio" id="nationCard_No"  name="nationCard" value="No" checked /> <label> &nbsp;No </label>
             	<br/><br/>
             	
+            	<label for="studentFunding">Would you like to apply for support?</label><br/>
+            	<input type="radio" name="studentFunding" value="Yes" /> <label>&nbsp;Yes</label>
+            	<input type="radio" name="studentFunding" value="No" checked /> <label>&nbsp;No</label>
+            	<br/><br/><br/>
+            	
+            	<!-- LOGISTICS SECTION -->
+            	
+            	<h2><i class="fa fa-globe"></i> Logistics</h2>
+            	
+            	<label for="bussPass">Would you like a buss pass? (+100 SEK) </label><br/>
+            	<input type="radio" name="bussPass" value="Yes" /> <label>&nbsp;Yes</label>
+            	<input type="radio" name="bussPass" value="No" checked /> <label>&nbsp;No</label>
+            	<br/><br/>
+            	
+            	
+            	<br/>
             </div>
 	        
 	        <br/>
@@ -416,7 +432,7 @@
     <script>
         allowGuests("AtOpening");
         allowGuests("AtBanquet");
-        getNationCard("Student");
+        toggleStudent("Student");
     </script>
     </body>
 </html>

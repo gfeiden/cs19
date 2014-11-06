@@ -195,26 +195,39 @@ function guestToggle(input) {
 }
 
 // Bug: Student selecting 'Yes' does not enable radio button
-function getNationCard(input) {
+function toggleStudent(input) {
     var nots = document.getElementById(input + "_No").checked;
     var stud = document.getElementById(input + "_Yes").checked;
+    var fund = document.getElementsByName("studentFunding");
     var nation_yes = document.getElementById("nationCard_Yes");
     var nation_no = document.getElementById("nationCard_No");
     
     if (nots) {
+        fund[0].checked = false;
+        fund[1].checked = true;
+        fund[0].disabled = true;
+        fund[1].disabled = true;
         nation_yes.disabled = true;
         nation_yes.checked = false;
-        nation_no.disabled = false;
+        nation_no.disabled = true;
         nation_no.checked = true;
     } else if (stud) {
+        fund[0].checked = true;
+        fund[1].checked = false;
+        fund[0].disabled = false;
+        fund[1].disabled = false;
         nation_yes.disabled = false;
         nation_yes.checked = true;
         nation_no.disabled = false;
         nation_no.checked = false;
     } else {
+        fund[0].checked = false;
+        fund[1].checked = true;
+        fund[0].disabled = true;
+        fund[1].disabled = true;
         nation_yes.disabled = true;
         nation_yes.checked = false;
-        nation_no.disabled = false;
+        nation_no.disabled = true;
         nation_no.checked = true;
     }
     

@@ -210,18 +210,11 @@ span.tags {
     100% {width: 40%; opacity: 1;}
 }
 
-@-webkit-keyframes close {
-    0% {width: 40%; opacity: 1;}
-    100% {width: 10%; opacity: 0;}
-}
-
-@keyframes close {
-    0% {width: 40%; opacity: 1;}
-    100% {width: 10%; opacity: 0;}
-}
 
 div#wtf {
-    float: right;
+    position: fixed;
+    top: 75%;
+    
     visibility: hidden;
     max-width: 40%;
     
@@ -238,23 +231,14 @@ div#wtf {
 }
 
 div#wtf.open {
-    -webkit-animation: open 2.5s ease-in-out;
-    -moz-animation: open 2.5s ease-in-out;
-    -ms-animation: open 2.5s ease-in-out;
-    -o-animation: open 2.5s ease-in-out;
-    animation: open 2.5s ease-in-out;
+    -webkit-animation: open 1.0s ease-in-out;
+    -moz-animation: open 1.0s ease-in-out;
+    -ms-animation: open 1.0s ease-in-out;
+    -o-animation: open 1.0s ease-in-out;
+    animation: open 1.0s ease-in-out;
     
     visibility: visible;
     max-width: 40%;
-}
-
-div#wtf.close {
-    -webkit-animation: close 2.5s ease-in-out;
-    -moz-animation: close 2.5s ease-in-out;
-    -ms-animation: close 2.5s ease-in-out;
-    -o-animation: close 2.5s ease-in-out;
-    animation: close 2.5s ease-in-out;
-    
 }
 
 
