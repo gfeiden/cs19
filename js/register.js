@@ -44,11 +44,11 @@ function checkResearchTags() {
     
     var count = 0;
     for (var i = 0; i < tags.length; i++) {
-        if ( count != 4 && tags[i].checked) {
+        if (count != 4 && tags[i].checked) {
             tags[i].disabled = false;
             count++;
             if (count == 4) {
-                i = 0;
+                i = -1;
             }
         } else if (count == 4 && !tags[i].checked) {
             tags[i].disabled = true;
@@ -218,6 +218,23 @@ function getNationCard(input) {
         nation_no.checked = true;
     }
     
+}
+
+function showDiv() {
+    var elem = document.getElementById('wtf');
+    var visibility = elem.style.visibility;
+    
+    if (visibility == 'visible') {
+        elem.style.visibility = 'hidden';
+        if (elem.classList.contains('open')) {
+            elem.classList.remove('open');
+        }
+    } else if (visibility == 'hidden') {
+        elem.style.visibility = 'visible';
+        elem.classList.add('open');
+    } else {
+        elem.style.visibility = 'hidden';
+    }
 }
 
 function calcRegFee() {

@@ -200,6 +200,64 @@ span.tags {
     width: 170px;
 }
 
+@-webkit-keyframes open {
+    0% {width: 10%; opacity: 0;}
+    100% {width: 40%; opacity: 1;}
+}
+
+@keyframes open {
+    0% {width: 10%; opacity: 0;}
+    100% {width: 40%; opacity: 1;}
+}
+
+@-webkit-keyframes close {
+    0% {width: 40%; opacity: 1;}
+    100% {width: 10%; opacity: 0;}
+}
+
+@keyframes close {
+    0% {width: 40%; opacity: 1;}
+    100% {width: 10%; opacity: 0;}
+}
+
+div#wtf {
+    float: right;
+    visibility: hidden;
+    max-width: 40%;
+    
+    border: 2px solid #555555;
+    background-color: #fbfbfb;
+    color: #555555;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+div#wtf.open {
+    -webkit-animation: open 2.5s ease-in-out;
+    -moz-animation: open 2.5s ease-in-out;
+    -ms-animation: open 2.5s ease-in-out;
+    -o-animation: open 2.5s ease-in-out;
+    animation: open 2.5s ease-in-out;
+    
+    visibility: visible;
+    max-width: 40%;
+}
+
+div#wtf.close {
+    -webkit-animation: close 2.5s ease-in-out;
+    -moz-animation: close 2.5s ease-in-out;
+    -ms-animation: close 2.5s ease-in-out;
+    -o-animation: close 2.5s ease-in-out;
+    animation: close 2.5s ease-in-out;
+    
+}
+
+
 
 @media only screen and (max-width: 1024px) {
 	#form-div{
