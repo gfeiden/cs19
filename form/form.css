@@ -77,12 +77,12 @@ h2 a:hover {
 	background-color: rgba(220,220,220,0.6);
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 10px;
-	width:95%;
+	width:90%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-  border: 3px solid rgba(0,0,0,0);
+    border: 3px solid rgba(0,0,0,0);
 }
 .guest-input {
 	color:#000;
@@ -99,7 +99,7 @@ h2 a:hover {
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-  border: 3px solid rgba(0,0,0,0);
+    border: 3px solid rgba(0,0,0,0);
 }
 
 .reg-input:focus{
@@ -108,7 +108,7 @@ h2 a:hover {
 	border: 3px solid #fff270;
 	color: #000;
 	outline: none;
-  padding: 8px 8px 8px 8px;
+    /*padding: 8px 8px 8px 8px;  -- this was causing a resizing of input boxes on focus */ 
 }
 
 .choice{

@@ -181,6 +181,7 @@ function allowGuests(input) {
 		document.getElementById(input + 'Guest_Yes').disabled = true;
 		document.getElementById(input + 'GuestN').disabled = true;
 		document.getElementById(input + 'GuestN').value = "";
+		document.getElementById(input + 'Guest_No').disabled = true;
 		document.getElementById(input + 'Guest_No').checked = true;
 	} else {
 		document.getElementById(input + 'Guest_No').disabled = false;
