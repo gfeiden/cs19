@@ -77,12 +77,12 @@ h2 a:hover {
 	background-color: rgba(220,220,220,0.6);
 	padding: 5px 5px 5px 5px;
 	margin-bottom: 10px;
-	width:95%;
+	width:90%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-  border: 3px solid rgba(0,0,0,0);
+    border: 3px solid rgba(0,0,0,0);
 }
 .guest-input {
 	color:#000;
@@ -99,7 +99,7 @@ h2 a:hover {
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-  border: 3px solid rgba(0,0,0,0);
+    border: 3px solid rgba(0,0,0,0);
 }
 
 .reg-input:focus{
@@ -108,7 +108,7 @@ h2 a:hover {
 	border: 3px solid #fff270;
 	color: #000;
 	outline: none;
-  padding: 8px 8px 8px 8px;
+    /*padding: 8px 8px 8px 8px;  -- this was causing a resizing of input boxes on focus */ 
 }
 
 .choice{
@@ -171,11 +171,30 @@ input[type=radio]:not(old) + label {
 }
 .button:hover{
 	background-color: #bb3e3e;
-	color: #fff;
+	color: #ffffff;
+}
+.button:disabled{
+    background-color: #eeeeee;
+}
+.button:disabled:hover{
+    background-color: #eeeeee;
 }
 .back2cs19 {
 	height:18px;
 }
+
+.warning {
+    float: left;
+    margin-top: 6px;
+    padding: 7px;
+    border: 1px solid #555555;
+    
+    background-color: #eeeeee;
+    font-family: 'Roboto', Arial, Robot, sans-serif;
+    color: #c8201e;
+    visibility: hidden;
+}
+
 /* Icons ---------------------------------- */
 
 textarea {
@@ -197,7 +216,7 @@ span.tags {
   	font-weight:500;
 	font-size:20px;
 	
-    width: 170px;
+    width: 180px;
 }
 
 @-webkit-keyframes open {
@@ -210,18 +229,28 @@ span.tags {
     100% {width: 40%; opacity: 1;}
 }
 
-@-webkit-keyframes close {
-    0% {width: 40%; opacity: 1;}
-    100% {width: 10%; opacity: 0;}
+input[type=radio] {
+    cursor: pointer;
+    
+    height: 18px;
+    width: 18px;
+    
+    margin-left: 10px;
 }
 
-@keyframes close {
-    0% {width: 40%; opacity: 1;}
-    100% {width: 10%; opacity: 0;}
+input[type=checkbox] {
+    cursor: pointer;
+    
+    height: 18px;
+    width: 18px;
+    
+    margin-left: 10px;
 }
 
 div#wtf {
-    float: right;
+    position: fixed;
+    top: 75%;
+    
     visibility: hidden;
     max-width: 40%;
     
@@ -238,23 +267,14 @@ div#wtf {
 }
 
 div#wtf.open {
-    -webkit-animation: open 2.5s ease-in-out;
-    -moz-animation: open 2.5s ease-in-out;
-    -ms-animation: open 2.5s ease-in-out;
-    -o-animation: open 2.5s ease-in-out;
-    animation: open 2.5s ease-in-out;
+    -webkit-animation: open 1.0s ease-in-out;
+    -moz-animation: open 1.0s ease-in-out;
+    -ms-animation: open 1.0s ease-in-out;
+    -o-animation: open 1.0s ease-in-out;
+    animation: open 1.0s ease-in-out;
     
     visibility: visible;
     max-width: 40%;
-}
-
-div#wtf.close {
-    -webkit-animation: close 2.5s ease-in-out;
-    -moz-animation: close 2.5s ease-in-out;
-    -ms-animation: close 2.5s ease-in-out;
-    -o-animation: close 2.5s ease-in-out;
-    animation: close 2.5s ease-in-out;
-    
 }
 
 

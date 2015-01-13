@@ -340,29 +340,32 @@
             	<!-- RESEARCH AREA SELECTION -->
             	<h2><i class="fa fa-tags"></i> Research Tags</h2>
             	
-            	<label for="researchTags">Please select up to four research areas</label><br/>
-            	<input type="checkbox" name="research" value="abundances" onclick="checkResearchTags()"> <span class="tags"> &nbsp; abundances</span>
-            	<input type="checkbox" name="research" value="astrometry" onclick="checkResearchTags()"> <span class="tags"> &nbsp; astrometry</span>
-            	<input type="checkbox" name="research" value="astrobiology" onclick="checkResearchTags()"> <span class="tags"> &nbsp; astrobiology</span>
-            	<input type="checkbox" name="research" value="atmospheres" onclick="checkResearchTags()"> <span class="tags"> &nbsp; atmospheres</span> 
+            	<label for="researchTags">Please select up to four research areas</label><br/><br/>
+            	<span class="tags"><input type="checkbox" name="research" value="abundances" onclick="checkResearchTags()">  &nbsp; abundances</span>
+            	<span class="tags"><input type="checkbox" name="research" value="astrometry" onclick="checkResearchTags()">  &nbsp; astrometry</span>
+            	<span class="tags"><input type="checkbox" name="research" value="astrobiology" onclick="checkResearchTags()">  &nbsp; astrobiology</span>
             	    <br/>
-            	<input type="checkbox" name="research" value="BDs" onclick="checkResearchTags()"> <span class="tags"> &nbsp; brown dwarfs</span>
-            	<input type="checkbox" name="research" value="interferometry" onclick="checkResearchTags()"> <span class="tags"> &nbsp; interferometry</span>
-            	<input type="checkbox" name="research" value="interiors" onclick="checkResearchTags()"> <span class="tags"> &nbsp; interiors</span>
-            	<input type="checkbox" name="research" value="magnetism" onclick="checkResearchTags()"> <span class="tags"> &nbsp; magnetism</span>
+            	<span class="tags"><input type="checkbox" name="research" value="atmospheres" onclick="checkResearchTags()">  &nbsp; atmospheres</span> 
+            	<span class="tags"><input type="checkbox" name="research" value="BDs" onclick="checkResearchTags()"> &nbsp; brown dwarfs</span>
+            	<span class="tags"><input type="checkbox" name="research" value="interferometry" onclick="checkResearchTags()"> &nbsp; interferometry</span>
             	    <br/>
-            	<input type="checkbox" name="research" value="observational" onclick="checkResearchTags()"> <span class="tags"> &nbsp; observational </span>
-            	<input type="checkbox" name="research" value="parameters" onclick="checkResearchTags()"> <span class="tags"> &nbsp; parameters</span>
-            	<input type="checkbox" name="research" value="photometry" onclick="checkResearchTags()"> <span class="tags"> &nbsp; photometry</span>
-            	<input type="checkbox" name="research" value="planetary" onclick="checkResearchTags()"> <span class="tags"> &nbsp; planetary</span>
+            	<span class="tags"><input type="checkbox" name="research" value="interiors" onclick="checkResearchTags()"> &nbsp; interiors</span>
+            	<span class="tags"><input type="checkbox" name="research" value="magnetism" onclick="checkResearchTags()"> &nbsp; magnetism</span>
+            	<span class="tags"><input type="checkbox" name="research" value="observational" onclick="checkResearchTags()"> &nbsp; observational </span>
             	    <br/>
-            	<input type="checkbox" name="research" value="seismology" onclick="checkResearchTags()"> <span class="tags"> &nbsp; seismology</span>
-            	<input type="checkbox" name="research" value="simulation" onclick="checkResearchTags()"> <span class="tags"> &nbsp; simulation</span>
-            	<input type="checkbox" name="research" value="spectroscopy" onclick="checkResearchTags()"> <span class="tags"> &nbsp; spectroscopy</span>
-            	<input type="checkbox" name="research" value="stellar" onclick="checkResearchTags()"> <span class="tags"> &nbsp; stellar</span>
+            	<span class="tags"><input type="checkbox" name="research" value="parameters" onclick="checkResearchTags()"> &nbsp; parameters</span>
+            	<span class="tags"><input type="checkbox" name="research" value="photometry" onclick="checkResearchTags()"> &nbsp; photometry</span>
+            	<span class="tags"><input type="checkbox" name="research" value="planetary" onclick="checkResearchTags()">  &nbsp; planetary</span>
             	    <br/>
-            	<input type="checkbox" name="research" value="solar" onclick="checkResearchTags()"> <span class="tags"> &nbsp; solar</span>
-            	<input type="checkbox" name="research" value="winds" onclick="checkResearchTags()"> <span class="tags"> &nbsp; winds</span>
+            	<span class="tags"><input type="checkbox" name="research" value="seismology" onclick="checkResearchTags()">  &nbsp; seismology</span>
+            	<span class="tags"><input type="checkbox" name="research" value="simulation" onclick="checkResearchTags()">  &nbsp; simulation</span>
+            	<span class="tags"><input type="checkbox" name="research" value="spectroscopy" onclick="checkResearchTags()">  &nbsp; spectroscopy</span>
+            	    <br/>
+            	<span class="tags"><input type="checkbox" name="research" value="stellar" onclick="checkResearchTags()">  &nbsp; stellar</span>
+            	<span class="tags"><input type="checkbox" name="research" value="solar" onclick="checkResearchTags()">  &nbsp; solar</span>
+            	<span class="tags"><input type="checkbox" name="research" value="winds" onclick="checkResearchTags()">  &nbsp; winds</span>
+            	    <br/>
+            	<span class="tags" style="display=none;"></span>
             	<br/><br/>
             	
             	<!-- SOCIAL ACTIVITIES SECTION -->
@@ -377,7 +380,7 @@
             	<label for="AtOpening">Accompanying guests at the opening reception?</label><br/>
             	<input type="radio" id="AtOpeningGuest_No" name="AtOpeningGuest" value="No" onclick="guestToggle(name)" checked/> <label>&nbsp;No</label>
             	<input type="radio" id="AtOpeningGuest_Yes" name="AtOpeningGuest" value="Yes" onclick="guestToggle(name)"/> <label>&nbsp;Yes</label>
-            	<label> &nbsp;&nbsp;|&nbsp;&nbsp;If Yes, how many guests? (20€ per guest)&nbsp;</label><input class="guest-input" type="text" disabled="true" id="AtOpeningGuestN" name="AtOpeningGuestN" size="3" maxlength="2" onblur="isPositive(name)"/><span id="AtOpeningGuestNError"></span>
+            	<label> &nbsp;&nbsp;|&nbsp;&nbsp;If Yes, how many? (20€ per guest)&nbsp;</label><input class="guest-input" type="text" disabled="true" id="AtOpeningGuestN" name="AtOpeningGuestN" size="3" maxlength="2" onblur="isPositive(name)"/><span id="AtOpeningGuestNError"></span>
             	<br/><br/><br/>
             	
             	<label for="AtBanquet">Conference banquet</label><br/>
@@ -388,23 +391,58 @@
             	<label for="AtBanquet">Accompanying guests at the conference banquet?</label><br/>
             	<input type="radio" id="AtBanquetGuest_No" name="AtBanquetGuest" value="No" onclick="guestToggle(name)" checked> <label>&nbsp;No</label>
             	<input type="radio" id="AtBanquetGuest_Yes" name="AtBanquetGuest" value="Yes" onclick="guestToggle(name)"> <label>&nbsp;Yes</label>
-            	<label> &nbsp;&nbsp;|&nbsp;&nbsp;If Yes, how many guests? (60€ per guest)&nbsp;</label><input class="guest-input" type="text" disabled="true" id="AtBanquetGuestN" name="AtBanquetGuestN" size="3" maxlength="2" onblur="isPositive(name)"/>
+            	<label> &nbsp;&nbsp;|&nbsp;&nbsp;If Yes, how many? (100€ per guest)&nbsp;</label><input class="guest-input" type="text" disabled="true" id="AtBanquetGuestN" name="AtBanquetGuestN" size="3" maxlength="2" onblur="isPositive(name)"/>
+            	<br/><br/><br/>
+            	
+            	<!-- STUDENT SECTION -->
+            	
+            	<h2><i class="fa fa-money"></i> Students</h2>
+            	
+            	<label for="Student">Are you a student?</label><br/>
+            	<input type="radio" id="Student_Yes" name="Student" value="Yes" onclick="toggleStudent(name)" /> <label>&nbsp;Yes</label>
+            	<input type="radio" id="Student_No" name="Student" value="No" onclick="toggleStudent(name)" checked /> <label>&nbsp;No</label>
+            	<br/><br/>
+            	
+            	<label for="nationCard">If Yes, would you like a guest Nation Card? &nbsp; <i class="fa fa-question-circle" title="This will describe what a Nation Card is and what it gets you." onclick="showDiv()" style="cursor: pointer;"></i> </label><div id="wtf" style="visibility: hidden;">This will explain about a nation card with lots of text to make sure that the final frame will be filled. Just continuing to fill this with useless text to see if any bugs arise with the location of buttons and other elements in the web form, because you never know!</div><br/>
+            	<input type="radio" id="nationCard_Yes" name="nationCard" value="Yes" /> <label> &nbsp;Yes</label>
+            	<input type="radio" id="nationCard_No"  name="nationCard" value="No" checked /> <label> &nbsp;No </label>
+            	<br/><br/>
+            	
+            	<label for="studentFunding">Would you like to apply for financial support?</label><br/>
+            	<input type="radio" name="studentFunding" value="Yes" /> <label>&nbsp;Yes</label>
+            	<input type="radio" name="studentFunding" value="No" checked /> <label>&nbsp;No</label>
             	<br/><br/><br/>
             	
             	<!-- LOGISTICS SECTION -->
             	
             	<h2><i class="fa fa-globe"></i> Logistics</h2>
             	
-            	<label for="Student">Are you a student?</label><br/>
-            	<input type="radio" id="Student_Yes" name="Student" value="Yes" onclick="getNationCard(name)" /> <label>&nbsp;Yes</label>
-            	<input type="radio" id="Student_No" name="Student" value="No" onclick="getNationCard(name)" checked /> <label>&nbsp;No</label>
+            	<label for="bookTravel">Would you like help booking your trip? </label><br/>
+            	<input type="radio" name="bookTravel" value="Yes" /> <label>&nbsp;Yes</label>
+            	<input type="radio" name="bookTravel" value="No" checked /> <label>&nbsp;No</label>
             	<br/><br/>
             	
-            	<label for="nationCard">If Yes, would you like a guest Nation Card? &nbsp; <i class="fa fa-question-circle" title="This will describe what a Nation Card is and what it gets you." onclick="showDiv()"></i> </label><div id="wtf" style="visibility: hidden;">This will explain about a nation card with lots of text to make sure that the final frame will be filled.</div><br/>
-            	<input type="radio" id="nationCard_Yes" name="nationCard" value="Yes" /> <label> &nbsp;Yes</label>
-            	<input type="radio" id="nationCard_No"  name="nationCard" value="No" checked /> <label> &nbsp;No </label>
+            	<label for="bookHotel">Would you like help booking a hotel room? </label><br/>
+            	<input type="radio" name="bookHotel" value="Yes" /> <label>&nbsp;Yes</label>
+            	<input type="radio" name="bookHotel" value="No" checked /> <label>&nbsp;No</label>
             	<br/><br/>
             	
+            	<label for="busPass">Would you like a bus pass for the week? (+100 SEK) </label><br/>
+            	<input type="radio" name="busPass" value="Yes" /> <label>&nbsp;Yes</label>
+            	<input type="radio" name="busPass" value="No" checked /> <label>&nbsp;No</label>
+            	<br/><br/>
+            	
+            	<label for="inviteLetter">Do you need an invitation letter? </label><br/>
+            	<input type="radio" name="inviteLetter" value="Yes" /> <label>&nbsp;Yes</label>
+            	<input type="radio" name="inviteLetter" value="No" checked /> <label>&nbsp;No</label>
+            	<br/><br/>
+            	
+            	<label for="childCare">Will you need child care during the week? </label><br/>
+            	<input type="radio" name="childCare" value="Yes" /> <label>&nbsp;Yes</label>
+            	<input type="radio" name="childCare" value="No" checked /> <label>&nbsp;No</label>
+            	<br/><br/>
+            	
+            	<br/>
             </div>
 	        
 	        <br/>
@@ -416,7 +454,7 @@
     <script>
         allowGuests("AtOpening");
         allowGuests("AtBanquet");
-        getNationCard("Student");
+        toggleStudent("Student");
     </script>
     </body>
 </html>

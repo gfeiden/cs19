@@ -34,6 +34,27 @@ function abstractPreview() {
     
     // typeset mathematics with MathJax
     MathJax.Hub.Queue(["Typeset",MathJax.Hub,"abstractPreview"]);
+    
+    // check fields to enable submission
+    var err = 0;
+    var fields = [abtext, author, title];
+    for (var i = 0; i < fields.length; i++) {
+        if (fields[i].innerHTML == "") {
+            err++;
+        }
+    }
+    if (err == 0) {
+        document.getElementById("warning").style.visibility = "hidden";
+        document.getElementById("submit").disabled = false;
+        document.getElementById("submit").style.backgroundColor = "#555555";
+    } else {
+        document.getElementById("warning").style.visibility = "visible";
+        document.getElementById("submit").disabled = true;
+        document.getElementById("submit").style.backgroundColor = "#eeeeee";
+    }
+}
+
+function abstractToggle() {
 }
 
 function abstractReset() {
