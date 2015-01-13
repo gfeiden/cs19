@@ -391,24 +391,24 @@
             	<label for="AtBanquet">Accompanying guests at the conference banquet?</label><br/>
             	<input type="radio" id="AtBanquetGuest_No" name="AtBanquetGuest" value="No" onclick="guestToggle(name)" checked> <label>&nbsp;No</label>
             	<input type="radio" id="AtBanquetGuest_Yes" name="AtBanquetGuest" value="Yes" onclick="guestToggle(name)"> <label>&nbsp;Yes</label>
-            	<label> &nbsp;&nbsp;|&nbsp;&nbsp;If Yes, how many? (60€ per guest)&nbsp;</label><input class="guest-input" type="text" disabled="true" id="AtBanquetGuestN" name="AtBanquetGuestN" size="3" maxlength="2" onblur="isPositive(name)"/>
+            	<label> &nbsp;&nbsp;|&nbsp;&nbsp;If Yes, how many? (100€ per guest)&nbsp;</label><input class="guest-input" type="text" disabled="true" id="AtBanquetGuestN" name="AtBanquetGuestN" size="3" maxlength="2" onblur="isPositive(name)"/>
             	<br/><br/><br/>
             	
             	<!-- STUDENT SECTION -->
             	
-            	<h2><i class="fa fa-eur"></i> Students</h2>
+            	<h2><i class="fa fa-money"></i> Students</h2>
             	
             	<label for="Student">Are you a student?</label><br/>
             	<input type="radio" id="Student_Yes" name="Student" value="Yes" onclick="toggleStudent(name)" /> <label>&nbsp;Yes</label>
             	<input type="radio" id="Student_No" name="Student" value="No" onclick="toggleStudent(name)" checked /> <label>&nbsp;No</label>
             	<br/><br/>
             	
-            	<label for="nationCard">If Yes, would you like a guest Nation Card? &nbsp; <i class="fa fa-question-circle" title="This will describe what a Nation Card is and what it gets you." onclick="showDiv()"></i> </label><div id="wtf" style="visibility: hidden;">This will explain about a nation card with lots of text to make sure that the final frame will be filled. Just continuing to fill this with useless text to see if any bugs arise with the location of buttons and other elements in the web form, because you never know!</div><br/>
+            	<label for="nationCard">If Yes, would you like a guest Nation Card? &nbsp; <i class="fa fa-question-circle" title="This will describe what a Nation Card is and what it gets you." onclick="showDiv()" style="cursor: pointer;"></i> </label><div id="wtf" style="visibility: hidden;">This will explain about a nation card with lots of text to make sure that the final frame will be filled. Just continuing to fill this with useless text to see if any bugs arise with the location of buttons and other elements in the web form, because you never know!</div><br/>
             	<input type="radio" id="nationCard_Yes" name="nationCard" value="Yes" /> <label> &nbsp;Yes</label>
             	<input type="radio" id="nationCard_No"  name="nationCard" value="No" checked /> <label> &nbsp;No </label>
             	<br/><br/>
             	
-            	<label for="studentFunding">Would you like to apply for support?</label><br/>
+            	<label for="studentFunding">Would you like to apply for financial support?</label><br/>
             	<input type="radio" name="studentFunding" value="Yes" /> <label>&nbsp;Yes</label>
             	<input type="radio" name="studentFunding" value="No" checked /> <label>&nbsp;No</label>
             	<br/><br/><br/>
@@ -417,11 +417,20 @@
             	
             	<h2><i class="fa fa-globe"></i> Logistics</h2>
             	
-            	<label for="busPass">Would you like a bus pass? (+100 SEK) </label><br/>
+            	<label for="busPass">Would you like a bus pass for the week? (+100 SEK) </label><br/>
             	<input type="radio" name="busPass" value="Yes" /> <label>&nbsp;Yes</label>
             	<input type="radio" name="busPass" value="No" checked /> <label>&nbsp;No</label>
             	<br/><br/>
             	
+            	<label for="inviteLetter">Do you need an invitation letter? </label><br/>
+            	<input type="radio" name="inviteLetter" value="Yes" /> <label>&nbsp;Yes</label>
+            	<input type="radio" name="inviteLetter" value="No" checked /> <label>&nbsp;No</label>
+            	<br/><br/>
+            	
+            	<label for="childCare">Will you need child care during the week? </label><br/>
+            	<input type="radio" name="childCare" value="Yes" /> <label>&nbsp;Yes</label>
+            	<input type="radio" name="childCare" value="No" checked /> <label>&nbsp;No</label>
+            	<br/><br/>
             	
             	<br/>
             </div>
