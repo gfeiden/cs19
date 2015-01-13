@@ -171,11 +171,30 @@ input[type=radio]:not(old) + label {
 }
 .button:hover{
 	background-color: #bb3e3e;
-	color: #fff;
+	color: #ffffff;
+}
+.button:disabled{
+    background-color: #eeeeee;
+}
+.button:disabled:hover{
+    background-color: #eeeeee;
 }
 .back2cs19 {
 	height:18px;
 }
+
+.warning {
+    float: left;
+    margin-top: 6px;
+    padding: 7px;
+    border: 1px solid #555555;
+    
+    background-color: #eeeeee;
+    font-family: 'Roboto', Arial, Robot, sans-serif;
+    color: #c8201e;
+    visibility: hidden;
+}
+
 /* Icons ---------------------------------- */
 
 textarea {

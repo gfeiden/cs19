@@ -58,10 +58,11 @@
                 <label for="abstract">abstract <span style="font-size: 12pt">(max. 1650 chars.)</span></label>
                 <textarea id="abstract" rows="20" cols="70" name="abstract" value="" maxlength = "1650"></textarea>
                 
-                <!--<input type="submit" class="button" id="submit" value="Submit" style="float: right; margin-top: 3px;" />-->
+                <input type="submit" class="button" id="submit" value="Submit" style="float: right; margin-top: 3px;" />
             </form>
             <button class="button" onclick="abstractPreview()" style="margin-top: 5px;">Preview</button> 
             <button class="button" onclick="abstractReset()" style="margin-top: 5px;">Reset</button>
+            <div class="warning" id="warning">You must fill out all fields before submitting.</div>
             
             <br/><br/><br/>
             <h2>Abstract Preview</h2>
@@ -74,6 +75,9 @@
             <br/>
             
         </div> 
+        <script type="text/javascript">
+            document.getElementById("submit").disabled = true;
+        </script>
         
     </body>
     
