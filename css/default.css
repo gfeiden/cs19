@@ -64,7 +64,7 @@ d. Default Styles
       HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/
 /* ------------------------------------------------------------------ */
 
-html, body, div, span, object, iframe,
+html, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
@@ -83,6 +83,15 @@ time, mark, audio, video {
    font-size: 100%;
    vertical-align: baseline;
    background: transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 
 article,aside,details,figcaption,figure,
@@ -163,16 +172,18 @@ table {
    box-sizing: border-box;
 }
 
-html { font-size: 62.5%; }
+html { 
+    font-size: 62.5%; 
+}
 
 body {
-   background: #fff;
-   font-family: 'helvetica', sans-serif;
-   font-weight: normal;
-   font-size: 18px;
-   line-height: 36px;
-	color: #333;
-   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    /*background: #fff;*/
+    font-family: 'helvetica', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    color: #333;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
 }
 
@@ -181,9 +192,9 @@ body {
 --------------------------------------------------------------------- */
 
 caption, h1, h2, h3, h4, h5, h6 {
-   color: #313131;
+    color: #313131;
 	font-family: 'helvetica', sans-serif;
-   font-weight: normal;
+    font-weight: normal;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }
@@ -474,8 +485,8 @@ video,
 iframe,
 embed,
 object {
-   max-width: 100%;
-   height: auto;
+    max-width: 100%;
+    height: auto;
 }
 img.pull-right { margin: 12px 0px 0px 18px; }
 img.pull-left { margin: 12px 18px 0px 0px; }
@@ -488,27 +499,27 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-   font: 14px/24px 'robotomedium', sans-serif;
-   background: #2c5977;
-   color: #fff;
-   display: inline-block;   
+    font: 14px/24px 'robotomedium', sans-serif;
+    background: #2c5977;
+    color: #fff;
+    display: inline-block;   
 	text-decoration: none;
-   letter-spacing: 0;   
+    letter-spacing: 0;   
 	padding: 12px 20px;
 	margin-bottom: 18px;
-   border: none;
-   cursor: pointer;
-   height: auto;
-   text-transform: uppercase;
-   letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    height: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
-   -webkit-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
 	-moz-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
 	-ms-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 
-   border-radius: 3px;
+    border-radius: 3px;
 }
 
 .button:hover,
@@ -525,8 +536,8 @@ button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active {
-   background: #11ABB0;
-   color: #fff;
+    background: #11ABB0;
+    color: #fff;
 }
 
 .button.full-width,
@@ -558,20 +569,19 @@ input[type="password"],
 input[type="email"],
 textarea,
 select {
-   display: block;
-   padding: 18px 15px;
-   margin: 0 0 24px 0;
-   border: 0;
-   outline: none;
-   vertical-align: middle;
-   min-width: 225px;
+    display: block;
+    padding: 18px 15px;
+    margin: 0 0 24px 0;
+    border: 0;
+    outline: none;
+    vertical-align: middle;
+    min-width: 225px;
 	max-width: 100%;
-   font-size: 15px;
-   line-height: 24px;
+    font-size: 15px;
+    line-height: 24px;
 	color: #647373;
 	background: #D3D9D9;
-   border-radius: 3px;
-
+    border-radius: 3px;
 }
 
 /* select { padding: 0;
@@ -582,7 +592,7 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-   color: #B3B7BC;
+    color: #B3B7BC;
 	background-color: #383D41;
 }
 
@@ -597,14 +607,14 @@ legend {
 }
 label span,
 legend span {
-	color: #8B9798;
-   font: 14px/24px 'robotomedium', sans-serif;
+    color: #8B9798;
+    font: 14px/24px 'robotomedium', sans-serif;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-   font-size: 15px;
-   color: #3d4145;
+    font-size: 15px;
+    color: #3d4145;
 }
 
 input[type="checkbox"] { display: inline; }
@@ -616,9 +626,9 @@ input[type="checkbox"] { display: inline; }
 /* default
 --------------------------------------------------------------- */
 .row {
-   width: 96%;
-   max-width: 1008px;
-   margin: 0 auto;
+    width: 96%;
+    max-width: 1008px;
+    margin: 0 auto;
 }
 /* fixed width for IE8 */
 .ie .row { width: 1000px ; }
@@ -638,10 +648,10 @@ input[type="checkbox"] { display: inline; }
 }
 
 .column, .columns {
-   position: relative;
-   padding: 0 18px;
-   min-height: 1px;
-   float: left;
+    position: relative;
+    padding: 0 18px;
+    min-height: 1px;
+    float: left;
 }
 .column.centered, .columns.centered  {
     float: none;
@@ -744,16 +754,16 @@ properly.
 @media only screen and (max-width: 767px) {
 
    .row {
-	   width: 480px;
-	   margin: 0 auto;
-      padding: 0;
+	    width: 480px;
+	    margin: 0 auto;
+        padding: 0;
 	}
    .column, .columns {
-	   width: auto !important;      
-	   float: none;
-	   margin-left: 0;
-	   margin-right: 0;
-      padding: 0 30px;
+	    width: auto !important;      
+	    float: none;
+	    margin-left: 0;
+	    margin-right: 0;
+        padding: 0 30px;
    }
    .row .row { width: auto; max-width: none; margin: 0 -30px; }
 
@@ -820,7 +830,7 @@ properly.
 .pull-left    { float: left !important; }
 .pull-right   { float: right !important; }
 .align-center {
-	margin-left: auto !important;
+    margin-left: auto  !important;
 	margin-right: auto !important;
 	text-align: center !important;
 }
