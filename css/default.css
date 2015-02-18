@@ -178,7 +178,7 @@ html {
 
 body {
     /*background: #fff;*/
-    font-family: 'helvetica', sans-serif;
+    font-family: 'Georgia', serif;
     font-weight: normal;
     font-size: 18px;
     line-height: 36px;
@@ -193,7 +193,7 @@ body {
 
 caption, h1, h2, h3, h4, h5, h6 {
     color: #313131;
-	font-family: 'helvetica', sans-serif;
+	font-family: 'Georgia', serif;
     font-weight: normal;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
@@ -208,7 +208,7 @@ caption {font-size: 14px;}
 p, caption { margin: 0 0 30px 0; }
 p img { margin: 0; }
 p.lead {
-   font: 19px/36px 'robotoregular', sans-serif;
+   font: 19px/36px 'Georgia', serif;
    margin-bottom: 18px;
 }
 
