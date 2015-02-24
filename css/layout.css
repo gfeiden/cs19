@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+@import url("./font-awesome/css/font-awesome.min.css");
+
 /*
 =====================================================================
 *   adapted from Woo v1.0 Layout Stylesheet
@@ -48,7 +50,7 @@ iframe{
 /* ------------------------------------------------------------------ */
 /* Webfonts and Icon fonts
  ------------------------------------------------------------------ */
-@import url("../form/font-awesome/css/font-awesome.min.css");
+@import url("./font-awesome/css/font-awesome.min.css");
 /* ------------------------------------------------------------------ */
 /* Preloader
  ------------------------------------------------------------------ */
@@ -139,7 +141,6 @@ header {
 
 /* header social */
 header .header-social {
-    font-family: 'FontAwesome';
     font-size: 24px;
     font-weight: normal;
     line-height: 54px;
