@@ -38,6 +38,7 @@ body {
     font-size: 100%;
     vertical-align: baseline;
     height: 100%;
+    background-color: #333;
 }
 
 p {font-size: 20px;}
@@ -227,19 +228,61 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 /* c. Hero Section
 /* ------------------------------------------------------------------ */
+@-webkit-keyframes fade-in {
+   from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fade-in {
+   from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {
+   from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+   0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .herrow
 {
     height: 100%;
     min-height: 100%;
-    /*width: 100vw;*/
     text-align:center;
     background-image: url(img/logo.svg);
     background-repeat: no-repeat no-repeat;
     background-position: center center;
     background-size: 60%;
-    
-    /*background-attachment: fixed;  */
+    -webkit-animation: fade-in 4s;
+    -moz-animation: fade-in 4s;
+    -o-animation: fade-in 4s;
+    animation: fade-in 4s;
 }
+
 #hero {
     height: 100%;
     padding-top:55px;
@@ -252,6 +295,10 @@ ul#nav li.current a {
     background-position: center center;
     background-attachment: fixed;
     text-align: center;
+    -webkit-animation: fade-in 4s;
+    -moz-animation: fade-in 4s;
+    -o-animation: fade-in 4s;
+    animation: fade-in 4s;
 }
 
 #hero .row {
