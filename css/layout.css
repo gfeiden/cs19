@@ -47,13 +47,6 @@ iframe{
     width: 70vw !important;
     height: 60vh !important;
 }
-/* ------------------------------------------------------------------ */
-/* Webfonts and Icon fonts
- ------------------------------------------------------------------ */
-@import url("./font-awesome/css/font-awesome.min.css");
-/* ------------------------------------------------------------------ */
-/* Preloader
- ------------------------------------------------------------------ */
 
 #preloader  {
    position: fixed;
@@ -662,7 +655,7 @@ footer .copyright {
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 
-    color: #333;
+    color: #999;
     font-size: 36px;
     line-height: 60px;
     
