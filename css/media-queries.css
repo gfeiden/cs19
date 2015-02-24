@@ -26,6 +26,10 @@
    /* nav-wrap */
    #nav-wrap { font: 16px; }
 
+.herrow
+{
+    background-image: url(img/logonarrow.svg);
+}
    
    /* Footer
    ------------------------------------------------------------------- */
@@ -189,7 +193,11 @@ ul#nav li {
    display: inline-block;
    margin-right: 10px !important;
    }
+.herrow {
+    background-image: url(img/logo.svg);
+    background-size:60%;
 
+}
 } 
 
 /* screenwidth less than or equal 480px - mobile wide
