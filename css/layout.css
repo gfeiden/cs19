@@ -235,9 +235,13 @@ ul#nav li.current a {
    padding-top: 66px;
    background: #eee;
    overflow: hidden;
+   background: url("../images/ukk.jpg") center 0 fixed no-repeat;
 }
 
-#hero .row { max-width: 1040px; }
+#hero .row {
+    max-width: 1040px;
+    background: rgba(245, 245, 245, 0.9)
+}
 
 #hero h1 {
     font-weight:700;
