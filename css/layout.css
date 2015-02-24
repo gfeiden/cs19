@@ -10,6 +10,13 @@
 common stuff
 
 ===================================================================== */
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
 
 html {
     height: 100%;
@@ -41,10 +48,7 @@ iframe{
 /* ------------------------------------------------------------------ */
 /* Webfonts and Icon fonts
  ------------------------------------------------------------------ */
-
-@import url("font-awesome/css/font-awesome.min.css");
-
-
+@import url("../form/font-awesome/css/font-awesome.min.css");
 /* ------------------------------------------------------------------ */
 /* Preloader
  ------------------------------------------------------------------ */
@@ -605,6 +609,16 @@ footer h3 {
    text-transform: uppercase;
    letter-spacing: 1px;
 }
+footer h3:before {
+   font-family: 'FontAwesome';   
+        margin: 0 0 6px 3px;
+        font-size: 30px;
+   line-height: 48px;
+   text-align: left;
+   color: #738291;
+   display: block;
+}
+
 footer ul {
    margin: 0;
    padding: 0;
