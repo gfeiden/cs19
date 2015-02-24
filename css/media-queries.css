@@ -6,32 +6,13 @@
 /* ================================================================== */
 
 
-/* screenwidth less than or equal 1024px
---------------------------------------------------------------------- */
-@media only screen and (max-width: 1024px) {
-
-   /* Hero Section
-   ------------------------------------------------------------------ */
-   .hero-text { width: 82%; }
-   .hero-text h1 { font: 38px/1.2em 'robotomedium', sans-serif; } 
-	
-	/* Testimonials Section
-   ------------------------------------------------------------------- */
-   #testimonials .text-container { width: 82%; }
-
-   /* Call To Action Section
-   ------------------------------------------------------------------- */
-   #call-to-action h2 { font: 26px/36px 'robotomedium', sans-serif; }
-   #call-to-action p { font-size: 16px; }
-
-}
 
 /* screenwidth less than or equal 900px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 900px) {
 
 	/* General and Common Styles */
-	.section-head h1 { font: 30px/30px 'robotobold', sans-serif; }
+	h1 { font-size: 26px; }
 
    /* Header Styles
    ------------------------------------------------------------------ */
@@ -41,47 +22,11 @@
     /* Hero Section
    ------------------------------------------------------------------ */
    #hero { padding-top: 60px; }
-   .hero-text { width: 88%; }
-   .hero-text h1 { font: 35px/1.2em 'robotobold', sans-serif; }
-   .hero-text p { font: 15px/30px 'robotoregular', sans-serif; } 
-  
+
    /* nav-wrap */
-   #nav-wrap { font: 10px 'robotomedium', sans-serif; }
+   #nav-wrap { font: 16px; }
 
-   /* Features Section
-   ------------------------------------------------------------------- */
-   #features .feature { margin-bottom: 30px; }
-   #features .right { padding-left: 18px; }
-   #features .left { padding-right: 18px; }
-   #features h3 { margin-bottom: 6px; } 
-
-   /* Pricing Section
-   ------------------------------------------------------------------- */
-   .pricing-tables { 
-      width: 82%; 
-      margin: 0 auto;
-   }
-
-   /* Call To Action Section
-   ------------------------------------------------------------------- */
-   #call-to-action .header-col h1:before {
-      font-size: 66px;
-      line-height: 66px;
-   }
-   #call-to-action h2 { font: 25px/36px 'robotoregular', sans-serif; } 
-   #call-to-action .action .button { font: 14px/24px 'robotoregular', sans-serif; } 
-   #call-to-action p { font-size: 15px; }
-
-   /* Testimonials Section
-   ------------------------------------------------------------------- */
-   #testimonials blockquote p { font-size: 24px; }  
-
-   /* Subscribe Section
-   ------------------------------------------------------------------- */
-   #subscribe h1 { margin-bottom: 18px; }
-   #mc_embed_signup input[type="submit"] { width: 46%; }
-   #mc_embed_signup input[type="email"] { width: 46%; }
-
+   
    /* Footer
    ------------------------------------------------------------------- */
    footer .right-cols .columns { width: 50% !important; }
@@ -97,18 +42,22 @@
 @media only screen and (max-width: 1280px) {
 
 	/* General and Common Styles */
-	.section-head { padding: 0 30px; }
-	body{font-size:14px;}
+	.section-head { padding: 0 0px; }
+   p {font-size: 18px;}
+   #calendar #day {font-size:18px;}
+   h1 {font-size: 28px;}
+
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap {
-      font: 12px 'robotomedium', sans-serif;
+      font-size: 18px;
+      line-height: 36px;
       background: transparent !important;
       letter-spacing: 1px;  
       color: #515968;
       position: absolute;
       top: 0;
-      left: 28px;
+      left: 10px;
    }
    #nav-wrap > a {	 
       text-align: left;
@@ -141,15 +90,16 @@
    /* hide menu panel */
    #nav-wrap ul#nav {
       padding: 24px 36px 24px 36px;
-      background: #1D2025; 
+      
+      background: #333; 
       height: auto;
       display: none;
       clear: both;
-      width: 200px; 
+      width: auto; 
       overflow-y:auto;            
       position: relative;
       top: 0;
-      right: 30px;           
+      right: 28px;           
    }
    
    /* display toggle buttons */
@@ -191,85 +141,7 @@
    /* Hero Section
    -------------------------------------------------------------------- */
    #hero { padding-top: 48px; }
-   .hero-text { width: 92%; }
-   .hero-text h1 { font: 32px/1.2em 'robotoregular', sans-serif; }
-   .hero-text p { font: 14px/24px 'robotoregular', sans-serif; } 
 
-   /* Hero CTA Buttons */
-   #hero .buttons { margin-bottom: 30px; }
-   #hero .buttons .button {
-      display: block;
-      width: 70%;
-      margin: 0 auto 18px auto;
-      font: 13px/24px 'robotoregular', sans-serif;
-      letter-spacing: 1.5px;
-   }
-
-   /* Features Section
-   --------------------------------------------------------------------- */   
-   #features .feature {
-      margin-top: 12px;
-      margin-bottom: 60px;
-   }
-   #features .right {
-      padding-left: 30px;
-      float: none;
-   }
-   #features .left {
-      padding-right: 30px;
-      float: none;
-   }
-   #features h3 { text-align: center; }  
-
-
-   /* Pricing Section
-   ------------------------------------------------------------------- */
-   .pricing-tables { width: 100%; }
-
-
-   /* Call To Action Section
-   ----------------------------------------------------------------- */
-   #call-to-action { text-align: center; }
-   #call-to-action h1 {
-      font: 16px/24px 'robotoregular', sans-serif;;
-      text-align: center;
-      margin-bottom: 30px;
-      text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-   }
-   #call-to-action h1 span { display: block; }
-   #call-to-action .header-col h1:before { content: none; }
-
-   /* Screenshots
-   ------------------------------------------------------------------- */
-   #screenshots-wrapper {
-      width: 80%;
-      margin: 0 auto;
-   } 
-   #screenshots-wrapper .columns { margin-bottom: 36px; }
-
-
-   /* Testimonials Section
-   ------------------------------------------------------------------- */
-   #testimonials .quote-left,      
-   #testimonials .quote-right {    
-      font-size: 30px;
-      margin-top: -25px;
-   }
-   #testimonials .text-container { width: 80%; }
-   #testimonials blockquote p { 
-      font-size: 20px; 
-      line-height: 30px;
-   }   
-
-   /* Subscribe Section
-   ------------------------------------------------------------------- */
-   #mc_embed_signup { width: 90%; }
-   #mc_embed_signup input[type="submit"], 
-   #mc_embed_signup input[type="email"] { 
-      width: 100%;
-      text-align: center; 
-      margin-bottom: 30px;
-   }
    
    /* footer
    ------------------------------------------------------------------------ */
@@ -324,6 +196,8 @@ ul#nav li {
   -------------------------------------------------------------------------- */
 @media only screen and (max-width: 480px) {   
 
+      h1 { font-size: 20px; }
+      p, label    {font-size: 16px;}
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap { width: 100%; }
@@ -335,17 +209,8 @@ ul#nav li {
    /* Hero Section
    -------------------------------------------------------------------- */
    #hero { padding-top: 42px; }
-   .hero-text { width: 96%; }
-   .hero-text h1 { font: 25px/1.2em 'robotoregular', sans-serif; }
-   .hero-text p { font: 13px/24px 'robotoregular', sans-serif; } 
-
-   /* Testimonials Section
-   ------------------------------------------------------------------- */
-   #testimonials .quote-left,      
-   #testimonials .quote-right { font-size: 28px; }  
-   #testimonials blockquote p { font-size: 20px; }
-
-   /* Footer
+   
+      /* Footer
    ------------------------------------------------------------------- */
    footer .right-cols .columns { padding: 0 10px; }        
 
@@ -353,29 +218,7 @@ ul#nav li {
 
 /* screenwidth less than or equal 420px - mobile narrow
   -------------------------------------------------------------------------- */
-@media only screen and (max-width: 420px) { 
 
-    /* Hero Section
-   -------------------------------------------------------------------- */
-   .hero-text { width: 100%; }
-
-   /* Pricing Section
-   ------------------------------------------------------------------- */
-   .pricing-tables { width: 92%; }
-
-   /* Screenshots
-   ------------------------------------------------------------------- */
-   #screenshots-wrapper { width: 92%; }  
-
-   /* Testimonials Section
-   ------------------------------------------------------------------- */
-   #testimonials .text-container { width: 85%; }
-   #testimonials blockquote p { 
-      font-size: 18px; 
-      line-height: 27px;
-   }   
-
-} 
 
 /* make sure the menu is visible on larger screens
   -------------------------------------------------------------------------- */

@@ -1,51 +1,124 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 /*
 =====================================================================
 *   adapted from Woo v1.0 Layout Stylesheet
 *   url: styleshout.com
 *   05-02-2014
-*   last revised 2014-07-22
+*   last revised 2014-07-227
 =====================================================================
-
-   TOC:
-   General and Common Styles
-   Header Styles
-   Hero 
-   Home 
-   News 
-   Registration
-   venue
-   Calendar 
-   Testimonials
-   Footer
+common stuff
 
 ===================================================================== */
 
-html, body {
+html {
     height: 100%;
 }
 
-/* a. Making iframes "responsive" */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    color: #666;
+        -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+        webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    height: 100%;
+}
+
+p {font-size: 20px;}
+/* Making iframes "responsive" */
 iframe{
     width: 70vw !important;
     height: 60vh !important;
 }
+/* ------------------------------------------------------------------ */
+/* Webfonts and Icon fonts
+ ------------------------------------------------------------------ */
 
+@import url("font-awesome/css/font-awesome.min.css");
+
+
+/* ------------------------------------------------------------------ */
+/* Preloader
+ ------------------------------------------------------------------ */
+
+#preloader  {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: #fff;
+   z-index: 99999;
+   height: 100%;
+}
+#status  {    
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   width: 64px;
+   height: 64px;
+   margin: -32px 0 0 -32px;  
+   padding: 0;    
+}
 /* ------------------------------------------------------------------ */
 /* a. General and Common Styles
 /* ------------------------------------------------------------------ */
 
 .section-head {
-  	padding: 0 4%;
+  	padding: 0 ;
     text-align: center;
-}
-.section-head h1 {
-    font: 40px/54px 'robotobold', sans-serif;
-    color: #333;
-    text-transform: uppercase;
+   text-transform: uppercase; 
     letter-spacing: 1px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
+    
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #bb3e3e;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:700;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }
+h2 { font-size: 28px; line-height: 36px; margin-bottom: 6px; }
+h3 { font-size: 22px; line-height: 30px; margin-bottom: 12px; }
+h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }
+h5 { font-size: 18px; line-height: 30px; }
+h6 { font-size: 14px; line-height: 30px; }
+
+p a, p a:visited {
+   text-decoration: none;
+   outline: 0;
+   color: #bb3e3e;
+
+   -webkit-transition: color .3s ease-in-out;
+   -moz-transition: color .3s ease-in-out;
+   -o-transition: color .3s ease-in-out;
+   transition: color .3s ease-in-out;
+}
+
+/* for 'em' and 'strong' tags, font-size and line-height should be same with
+the body tag due to rendering problems in some browsers */
+em { font-: 15px/30px 'roboto-italic', sans-serif; }
+strong, b { font-weight:700; }
+
+img,video,iframe{
+    max-width: 100%;
+    height: auto;
+}
+
+.dark {
+    color: #bbb;
+}
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
@@ -53,7 +126,6 @@ iframe{
 header {
     height: 54px;
     width: 100%;
-    /*background: #13171B;*/
     background-color: #333;
     position: fixed;
     left: 0;
@@ -63,10 +135,10 @@ header {
 
 /* header social */
 header .header-social {
+    font-family: 'FontAwesome';
     font-size: 24px;
     font-weight: normal;
     line-height: 54px;
-    /*color: #424a56;*/
     color: #eee;
     margin: 0 10px 0 0;
     padding: 0;
@@ -76,8 +148,7 @@ header .header-social li {
    display: inline-block;
    margin-right: 20px;
 }
-/*header .header-social li a { color: #bb3e3e; }*/
-/*header .header-social li a:hover { color: #fff270; }*/
+
 header .header-social li a { 
     color: #eee; 
 }
@@ -98,9 +169,10 @@ header .header-social li a:hover {
 
 /* nav-wrap */
 #nav-wrap {
-    font: 14px  'robotomedium', sans-serif;
+    font: 16px  'Source Sans Pro', sans-serif;
     font-weight: normal;
     background-color: #333;
+    font-weight: 400;
     letter-spacing: 1px;
     float: left;
     padding: 0 1%;
@@ -160,66 +232,18 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #hero {
-    margin-top: 0px;
-    padding-top: 55px;
-    background: none transparent;
-    background: rgba(245,245,245,0.1) url("../images/ukk.jpg") center center no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 100%;
-    
-    overflow: visible;
+   padding-top: 66px;
+   background: #eee;
+   overflow: hidden;
 }
 
-#hero .hero-row {
-    width: 100%;
-    /*max-width: 1040px;*/
-    background: none transparent;
-}
+#hero .row { max-width: 1040px; }
 
-/* Hero Elements */
-.hero-img {
-    width: 75%;
-    text-align: center;
-    padding: 15px;
-    margin: 70px auto 24px auto;
-    background: rgba(245, 245, 245, 0.85);
-    border: 1px solid #777;
-    
-    -webkit-box-shadow: 0px 0px 10px #777;
-    -moz-box-shadow: 0px 0px 10px #777;
-    -o-box-shadow: 0px 0px 10px #777;
-    box-shadow: 0px 0px 10px #777;
-    
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-}
-.hero-text {
-    color: #333;
-    width: 100%;
-    text-align: center;
-    margin: 54px auto 24px auto;
-}
-.hero-text h1 {
-    font-family: Helvetica,sans-serif; 
-    font-weight: bold;
-    color: #444;
-    padding: 0;
-    margin: 0;
-    letter-spacing:2px;
-}
-.hero-text h1 span, .hero-text a { 
-    color: #ccc; 
-}
-.hero-text p {
-    font: 16px/30px 'robotoregular', sans-serif;
-    padding: 0;
-    margin: 12px 8% 0;
-    color: #333;
+#hero h1 {
+    font-weight:700;
+    font-family: "Ubuntu", sans-serif;
+    color:#999;
+    letter-spacing: 1px;
 }
 
 /* ------------------------------------------------------------------ */
@@ -228,8 +252,8 @@ ul#nav li.current a {
 
 #about {
     background: #fafafa;
-    padding-top: 77px;
-    padding-bottom: 77px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     overflow: hidden;
 }
 
@@ -239,8 +263,8 @@ ul#nav li.current a {
 
 #speakers {
     background: #fff;
-    padding-top: 77px;
-    padding-bottom: 77px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     overflow: hidden;
     text-align: center;
 }
@@ -281,14 +305,12 @@ ul#nav li.current a {
 
 #card h2 {
     color: #333;
-    font-family: 'robotomedium', sans-serif;
     font-size: 22pt;
     text-decoration: none;
 }
 
 #card h3 {
     color: #cd5c5c;
-    font-family: 'robotomedium', sans-serif;
     font-size: 16pt;
     text-decoration: none;
 }
@@ -296,10 +318,8 @@ ul#nav li.current a {
 #card div {
     display: inline-block;
     margin: 5px auto 5px auto;
-    
     color: #333;
     font-size: 28pt;
-    font-family: 'robotoregular', sans-serif;
     text-decoration: none;
     text-align: center;
 }
@@ -319,7 +339,7 @@ ul#nav li.current a {
 
 #card p {
     display: inline-block;
-    font-family: 'robotoregular', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 12pt;
     line-height: 18pt;
     text-decoration: none;
@@ -331,9 +351,9 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #news {
-    background: #fafafa;
-    padding-top: 77px;
-    padding-bottom: 77px;
+    background: #393939;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /*----------------------------------------------*/
@@ -342,54 +362,9 @@ ul#nav li.current a {
 
 #registration {
     background: #fff ;
-    padding-top: 77px;
-    padding-bottom: 77px;   
+    padding-top: 30px;
+    padding-bottom: 30px;   
     text-align: center;
-}
-#registration .price-block {
-    background: #fff;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 36px;
-   
-    border-top: 5px solid #f2f2f2;
-    border-bottom: 5px solid #f2f2f2; 
-}
-.plan-title {
-    font: 15px/30px 'robotoregular', sans-serif;
-    padding: 30px 20px 6px 20px;
-    margin-bottom: 0px;
-    color:#222;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-.plan-title .fa {
-    display: block;
-    margin-bottom: 6px;
-    font-size: 26px;
-}
-.plan-price {
-    font-family: 'helvetica', sans-serif;
-    font-size: 30px;
-    color: #222;
-    padding: 6px 30px 6px 30px;
-    margin-bottom: 0;
-    text-align: center;
-    letter-spacing: .5px;
-}
-
-.plan-sign-up {
-    padding: 24px 15px;
-    margin: 0;
-    text-align: center;
-    background:#fff;
-}
-
-.plan-sign-up .button {
-    font: 13px/24px 'robotomedium', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 /* ------------------------------------------------------------------ */
@@ -398,8 +373,8 @@ ul#nav li.current a {
 
 #calendar {
    background: #fafafa;
-   padding-top: 77px;
-   padding-bottom: 77px;
+   padding-top: 30px;
+   padding-bottom: 30px;
    width: 100%;
    
    display: inline-block;
@@ -407,9 +382,7 @@ ul#nav li.current a {
 }
 
 #calendar p {
-    color: #333;
-    font-family: 'robotoregular', sans-serif;
-    /*font-size: 13pt;*/
+    color: #666;
 }
 
 #calendar #open {
@@ -423,10 +396,10 @@ ul#nav li.current a {
     margin: 30px auto 10px auto;
     height: auto;
     width: 100px;
-    
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight:300;
     color: #cd5c5c;
-    font-family: 'robotregular', sans-serif;
-    font-size: 20pt;
+    font-size: 28px;
     text-align: center;
     line-height: 22pt;
 }
@@ -447,7 +420,7 @@ ul#nav li.current a {
     width: 50px;
     
     color: #cd5c5c;
-    font-family: 'robotregular', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 20pt;
     text-align: center;
     line-height: 22pt;
@@ -458,6 +431,10 @@ ul#nav li.current a {
 }
 
 /* invisible checkbox for calendar function */
+label {
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+}
 label[for^="_"].collapse {
     display: inline-block;
     cursor: pointer;
@@ -585,9 +562,6 @@ label[for^="_"].collapse + input#_fri:checked ~ div#_fri {
 
 .day-schedule h1 {
     margin: 20px auto 20px auto;
-    
-    color: #333;
-    font-family: 'robotoregular', sans-serif;
     font-size: 20pt;
 }
 
@@ -597,126 +571,40 @@ label[for^="_"].collapse + input#_fri:checked ~ div#_fri {
 
 #venue {
    background: #fff;
-   padding-top: 77px;
-   padding-bottom: 77px;
+   padding-top: 30px;
+   padding-bottom: 30px;
    overflow: hidden;
 }
 
-/* ------------------------------------------------------------------
-/* h. Testimonials
-/* ------------------------------------------------------------------ */
-
-#testimonials {
-   background: #2c5977 url(img/escheresque.png);
-   padding-top: 112px;
-   padding-bottom: 66px;
-   position: relative;
-   min-height: 198px;
-   width: 100%;
-   overflow: hidden;
-   text-align: center;
-}
-
-#testimonials .quote-left, 
-#testimonials .quote-right {
-   position: absolute;
-   top: 50%;
-   color: #fff;
-   font-size: 40px;
-   margin-top: -25px;
-}
-#testimonials .quote-left { left: 5%; }
-#testimonials .quote-right { right: 5%; }
-
-#testimonials .text-container {
-   width: 86%;
-   margin: 0 auto;
-}
-
-/*	Blockquotes */
-#testimonials blockquote {
-   margin: 0 0px 30px 0px;
-   padding-left: 0;
-   position: relative;   
-}
-#testimonials blockquote:before { content: none; }
-#testimonials blockquote p {
-   font-family: 'robotomedium', sans-serif;
-   font-style: normal;
-   color: #fff;
-   padding: 0;
-   font-size: 26px;
-   line-height: 42px;   
-}
-#testimonials blockquote cite {
-   display: block;
-   font-size: 12px;
-   font-style: normal;
-   line-height: 18px;
-   color: #fff;
-}
-#testimonials blockquote cite:before { content: "\2014 \0020"; }
-#testimonials blockquote cite a,
-#testimonials blockquote cite a:visited { color: #8B9798; border: none }
 
 /* ------------------------------------------------------------------ */
 /* Footer
 /* ------------------------------------------------------------------ */
 
 footer {
-    padding-top: 84px;
-    margin-bottom: 0px;
+    padding-top: 30px;
+
+    padding-bottom: 100px;
     background: #333;
     color: #ddd;
-    font-size: 13px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 22px;
     position: relative;
 }
 
 footer a, footer a:visited { color: #bb3e3e; }
 footer a:hover, footer a:focus { color: #fff; }
 
-footer .info { padding-right: 90px; }
 
-footer .footer-logo a {
-    display: block;
-    margin-bottom: 12px;
-    margin-top: 12px;
-    margin-left: 3px;
-}
-footer .footer-logo a img {
-    height: 24px;
-    width: 92px;
-}
-
-footer .right-cols .columns {
-    padding-right: 5px;
-    padding-left: 5px;
-    width: 33.33333%; ;
-}
-footer .right-cols .columns p { margin-bottom: 6px; }
 
 footer h3 {
-   font: 13px/24px 'robotomedium', sans-serif;
+   font-size: 20px;
    margin-bottom: 0;
    font-weight: normal;
    color: #fff;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-footer h3:before {
-   font-family: 'FontAwesome';   
-	margin: 0 0 6px 3px;
-	font-size: 30px;
-   line-height: 48px;
-   text-align: left;
-   color: #738291;
-   display: block;
-}
-footer h3.address:before { content: "\f041"; }
-footer h3.social:before { content: "\f0c0"; }
-footer h3.contact:before { content: "\f0e0"; }
-
 footer ul {
    margin: 0;
    padding: 0;
@@ -805,83 +693,88 @@ footer .copyright {
     background: #0F9095; 
 }
 
-#top {
-   padding-top: 66px;
-   padding-bottom: 30px;
-   background: #0B486B;
-   overflow: hidden;
+
+/* 6. Buttons  --------------------------------------------------------- */
+
+.button,
+.button:visited,
+button, {
+    font-size: 14px/24px;
+    background: #2c5977;
+    color: #fff;
+    display: inline-block;   
+    text-decoration: none;
+    letter-spacing: 0;   
+    padding: 12px 20px;
+    margin-bottom: 18px;
+    border: none;
+    cursor: pointer;
+    height: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+    border-radius: 3px;
 }
 
-.top-text h1 {
-   font: 40px/1.2em  'robotomedium', sans-serif;
+.button:hover,
+button:hover {
+   background: #bb3e3e;
    color: #fff;
-   padding: 0;
-   margin: 0;
-   letter-spacing:2px;
-}
-#top p {color:#fff}
-#top a {color:#fff270}
-/* ------------------------------------------------------------------ */
-/* Sunday Section
-/* ------------------------------------------------------------------ */
-
-#sunday {
-   background: #eee;
-   padding-top: 78px;
-   padding-bottom: 54px;
-   overflow: hidden;
 }
 
-/* ------------------------------------------------------------------ */
-/* Monday Section
-/* ------------------------------------------------------------------ */
-
-#monday {
-   background: #fff;
-   padding-top: 78px;
-   padding-bottom: 54px;
-   overflow: hidden;
+.button:active,
+button:active{
+    background: #11ABB0;
+    color: #fff;
 }
-/* ------------------------------------------------------------------ */
-/* Monday Section
-/* ------------------------------------------------------------------ */
 
-#tuesday {
-   background: #eee;
-   padding-top: 96px;
-   padding-bottom: 54px;
-   overflow: hidden;
-}
-/* ------------------------------------------------------------------ */
-/* Wednesday Section
-/* ------------------------------------------------------------------ */
-
-#wednesday {
-   background: #fff;
-   padding-top: 96px;
-   padding-bottom: 54px;
-   overflow: hidden;
-}
-/* ------------------------------------------------------------------ */
-/* Thursday Section
-/* ------------------------------------------------------------------ */
-
-#thursday {
-   background: #eee;
-   padding-top: 96px;
-   padding-bottom: 54px;
-   overflow: hidden;
-}
-/* ------------------------------------------------------------------ */
-/* Friday Section
-/* ------------------------------------------------------------------ */
-
-#friday {
-   background: #fff;
-   padding-top: 96px;
-   padding-bottom: 54px;
-   overflow: hidden;
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
 }
 
 
 
+
+/* ------------------------------------------------------------------ */
+/* d. Grid
+--------------------------------------------------------------------- */
+
+/* default
+--------------------------------------------------------------- */
+.row {
+    width: 90%;
+    max-width: 1008px;
+    margin: 0 auto;
+}
+/* fixed width for IE8 */
+.ie .row { width: 1000px ; }
+
+
+  
+
+/* screenwidth less than or equal 480px - mobile wide
+--------------------------------------------------------------- */
+@media only screen and (max-width: 480px) {
+
+   .row { width: auto;
+        padding-left: 20px;
+        padding-right: 20px; }
+
+}
+
+/* larger screens
+--------------------------------------------------------------- */
+@media screen and (min-width: 1200px) {
+
+   .wide .row { max-width: 1180px; }
+
+}    
