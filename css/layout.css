@@ -1,7 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 @import url("./font-awesome/css/font-awesome.min.css");
-
 /*
 =====================================================================
 *   adapted from Woo v1.0 Layout Stylesheet
@@ -228,11 +227,25 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 /* c. Hero Section
 /* ------------------------------------------------------------------ */
-
+.herrow
+{
+   width:100%;
+   text-align:center;
+   background-image: url(img/logo.svg);
+   background-repeat: no-repeat no-repeat;
+   background-position: center center;
+   background-attachment: fixed;   
+}
 #hero {
-   padding-top: 66px;
+   text-align:center;
+   padding-top:55px;
    background: #eee;
-   overflow: hidden;
+   min-height:100%;
+   background-image: url(img/hero-bg.jpg);
+   background-size:cover;
+   background-repeat: no-repeat no-repeat;
+   background-position: top left;
+   background-attachment: fixed;
 }
 
 #hero .row { max-width: 1040px; }
@@ -240,7 +253,7 @@ ul#nav li.current a {
 #hero h1 {
     font-weight:700;
     font-family: "Ubuntu", sans-serif;
-    color:#999;
+    color:#eee;
     letter-spacing: 1px;
 }
 
