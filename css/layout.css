@@ -355,12 +355,16 @@ ul#nav li.current a {
 #card {
     display: inline-block;
     height: 350px;
-    width: 250px;
+    width: 270px;
     
     padding: 15px;
     margin: 0px 20px 50px 20px;
     
     text-align: center;
+}
+
+#card.loc {
+    height: 100px;
 }
 
 #card .head {
@@ -375,17 +379,22 @@ ul#nav li.current a {
     -moz-border-radius: 100%;
     -o-border-radius: 100%;
     border-radius: 100%;
+    
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    
 }
 
 #card h2 {
     color: #333;
-    font-size: 22pt;
+    font-size: 20pt;
     text-decoration: none;
 }
 
 #card h3 {
     color: #cd5c5c;
-    font-size: 16pt;
+    font-size: 15pt;
     text-decoration: none;
 }
 
@@ -643,11 +652,29 @@ label[for^="_"].collapse + input#_fri:checked ~ div#_fri {
 /* venue
 /* ------------------------------------------------------------------ */
 
-#venue {
-   background: #fff;
+#logistics {
+   background: #eee;
    padding-top: 30px;
    padding-bottom: 30px;
    overflow: hidden;
+   text-align: center;
+}
+
+#logistics img {
+    height: 250px;
+    border: 1px solid #333;
+}
+
+/* ------------------------------------------------------------------ */
+/* Organizing Committees
+/* ------------------------------------------------------------------ */
+
+#ocs {
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    text-align: center;
 }
 
 
