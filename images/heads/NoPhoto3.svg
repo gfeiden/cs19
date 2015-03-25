@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg2"
+    sodipodi:docname="astronomer2.svg"
+    viewBox="0 0 400 600"
+    version="1.1"
+    inkscape:version="0.47 r22583"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-y="24"
+      pagecolor="#ffffff"
+      inkscape:window-height="666"
+      inkscape:window-maximized="0"
+      inkscape:zoom="0.37819679"
+      inkscape:window-x="0"
+      showgrid="false"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="178.09287"
+      inkscape:cy="355.77195"
+      inkscape:window-width="1337"
+      inkscape:pageopacity="0"
+      inkscape:document-units="px"
+  />
+  <g
+      id="layer1"
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+      transform="translate(-193.95 -281.95)"
+    >
+    <g
+        id="g3704"
+        transform="translate(3.8019 -22)"
+      >
+      <path
+          id="path3608"
+          style="fill:#000000"
+          d="m396.12 477.11h-5.2521l-3.1229-3.1667 0.42585-3.9583 7.9492 7.125z"
+      />
+      <path
+          id="path3610"
+          style="fill:#000000"
+          d="m409.62 489.24h-4.9386l-2.9364-2.9444 0.40042-3.6806 7.4746 6.625z"
+      />
+      <path
+          id="path2830"
+          sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+          style="stroke-linejoin:round;stroke:#5d5d5d;stroke-width:1px;fill:#000000"
+          d="m255.57 358.39c-16.772 17.488-30.153 33.846-42.931 50.003l73.236 64.145 47.477 37.881-2.0203 2.0203c-7.4528-6.5098-17.465-9.8206-30.305-9.5964-32.703 11.322-47.26 35.485-44.952 65.66 2.0438 7.8052 5.0531 14.645 11.112 18.435l11.112 18.435 12.627 20.203-3.5355 1.5152-2.5254 3.5355 1.5152 13.637-1.0102 1.0102-3.0304 0.50507 1.5152 16.162 2.0203 2.0203 1.5152 27.779-92.934 188.39 22.223-2.0203 79.297-163.64-39.396 165.16 19.193-3.0305 45.962-186.37 18.688-5.5558 119.7 175.26 9.5964-4.5457-120.21-172.74-6.0609-10.607-2.0203-2.0203-3.0305 1.0102 1.5152 2.5254-7.0711-1.0102-1.5152-21.718 9.5964-1.0102 12.122-15.657-4.0406-50.508 4.5457-8.0812c6.0016-2.2423 7.9677-11.402 4.5457-29.8l6.566-7.0711 15.152 12.122 4.0406-4.0406 15.657 15.152 1.5152-2.5254 3.5355 5.5558 6.0609-9.0914-3.0305-7.0711 16.162 1.5152 15.152-12.122-1.5152-7.0711 0.50508-1.0102-0.50508-1.5152-3.0305-0.50508-1.0102-8.5863-2.0203-4.5457-7.5762-2.5254 0.50508-1.5152-0.50508-0.50508-1.5152-0.50507h-2.0203-1.0102l-1.5152 2.0203h-1.5152l-1.0102-1.5152 5.5558-6.566-165.16-145.46z"
+      />
+      <path
+          id="path3606"
+          sodipodi:nodetypes="cccccccccccccccccccccc"
+          style="stroke-linejoin:round;stroke:#5d5d5d;stroke-width:1px;fill:#000000"
+          d="m418.7 495.77-33.335-27.274-1.5152 0.50508-12.627-10.859 15.152-16.415 11.869 11.364 0.50507 3.283 8.3338 0.75761-0.50508 4.7982 9.0914 8.3338 5.5558-0.75762v4.5457l2.2728 4.5457 6.566 6.8185-0.25254 3.5355 3.5355 2.0203 5.8084-8.3338c3.6356-1.6014 7.1834-2.8811 8.8388 2.7779-2.4809 8.8833-6.4568 16.272-13.637 20.456-5.432 0.37236-7.7178-1.7723-9.849-4.0406l0.25254-6.0609h-6.0609z"
+      />
+      <path
+          id="path3644"
+          sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccc"
+          style="stroke-linejoin:round;stroke:#5d5d5d;stroke-width:1px;fill:#000000"
+          d="m470.85 645.95 1 71h3.5l2.5 164.5 78.75-0.5 13.25-231 3.5-21 12.5-10-10.5-24.5c3.9776-3.4865 2.4102-8.2052 0.5-13-2.5903-26.743-5.0266-53.64-5-83v-35.5c-2.9217-12.486-5.4528-24.823-22-42.5l-7-11-3.5-2.5c3.4829-3.0342 7.1457-5.7086 10-10 3.4722-4.9816 6.9767-9.9199 8.5-17.5l-0.5-4c0.69207-5.5099 2.2938-9.8827 0.5-18.5-1.4785-3.9893-1.604-7.302-5.5-12.5l-2-3.5v-2c-8.3434-7.4899-21.04-10.626-35-12.5-16.451 5.2998-21.032 13.991-24.5 23l2.5 1.5-4 4-7 2-1 7 4 1-5 8 2.5 3-4 1.5-1 3.5 3 2-3 3c-0.57539 1.6763-3.5062 2.5674-0.5 5.4375 5.2114 2.2668 10.956 7.469 17.5 17.062l2 10.5c-10.198 21.95-16.168 43.195-22.5 64.5l0.5 21.5-2.5 23-4 38-0.5 80.5 4-0.5z"
+      />
+    </g
+    >
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Amateur Astronomer</dc:title
+        >
+        <dc:date
+          >2011-05-19T21:13:24</dc:date
+        >
+        <dc:description
+          >Amateur Astronomer looks at night sky beside his telescope.  Silhouette.  Original was a photograph at Wikimedia.org http://commons.wikimedia.org/wiki/File:Astronomy_Amateur_3_V2.jpg created by user Halfblue.</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/139579/amateur-astronomer-by-sunking2</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >SunKing2</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >Amateur</rdf:li
+            >
+            <rdf:li
+              >Astronomy</rdf:li
+            >
+            <rdf:li
+              >Constellations</rdf:li
+            >
+            <rdf:li
+              >Night</rdf:li
+            >
+            <rdf:li
+              >Planets</rdf:li
+            >
+            <rdf:li
+              >Silhouette</rdf:li
+            >
+            <rdf:li
+              >Stars</rdf:li
+            >
+            <rdf:li
+              >Telescope</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
