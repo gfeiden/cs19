@@ -664,27 +664,6 @@ label[for^="_"].collapse + input#_fri:checked ~ div#_fri {
    text-align: center;
 }
 
-#logistics .wrapper {
-    width: 100%;
-    display: inline-block;
-}
-
-#logistics div.img {
-    display: inline-block;
-    width: 45%;
-    padding: 5%;
-
-}
-
-#logistics img {
-    width: 100%;
-    border: 1px solid #333;
-}
-
-#logistics h2 {
-    color: #333;
-}
-
 /* ------------------------------------------------------------------ */
 /* Organizing Committees
 /* ------------------------------------------------------------------ */
@@ -834,6 +813,81 @@ footer .copyright {
 }
 #go-top a:hover { 
     background: #cd5c5c;
+}
+
+/* Logistics Page ------------------------------------------------------ */
+
+#travel {
+    background: #eee;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#travel p {
+    text-align: justify;
+}
+
+#travel ol li {
+    text-align: justify;
+}
+
+#venues {
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#venues .wrapper {
+    width: 100%;
+    display: inline-block;
+}
+
+#venues div.img {
+    display: inline-block;
+    width: 47%;
+    padding: 2%;
+
+}
+
+#venues img {
+    width: 100%;
+    border: 1px solid #333;
+}
+
+#venues h2 {
+    color: #333;
+}
+
+#venues h3 {
+    margin: 0px;
+}
+
+#hotels {
+    background: #eee;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#hotels p {
+    text-align: justify;
+}
+
+#language {
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#language p {
+    text-align: justify;
 }
 
 
