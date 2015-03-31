@@ -282,6 +282,8 @@ ul#nav li.current a {
     background-repeat: no-repeat no-repeat;
     background-position: center center;
     background-size: 60%;
+
+}
 */
 
 #hero {
@@ -290,12 +292,17 @@ ul#nav li.current a {
     background: #eee;
     overflow: hidden;
     min-height:100%;
-    background-image: url(img/hero-bg.svg);
+    background-image: url(img/hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat no-repeat;
     background-position: center center;
     background-attachment: fixed;
     text-align: center;
+    
+    /*-webkit-animation: fade-in 3s ease-in-out;
+    -moz-animation: fade-in 3s ease-in-out;
+    -o-animation: fade-in 3s ease-in-out;
+    animation: fade-in 3s ease-in-out;*/
 }
 
 #hero .row {
