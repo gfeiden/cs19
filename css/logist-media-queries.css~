@@ -51,6 +51,73 @@
    #calendar #day {font-size:20px;}
    h1 {font-size: 28px;}
 
+
+
+
+   /* Header Styles
+   -------------------------------------------------------------------- */
+   header .logo { margin-right: 36px; }
+
+   /* Hero Section
+   -------------------------------------------------------------------- */
+   #hero { padding-top: 48px; }
+
+   
+   /* footer
+   ------------------------------------------------------------------------ */
+   footer { text-align: center; }
+   footer .info { padding-right: 30px; }
+   footer .info p { margin-bottom: 18px; }
+   footer h3:before { text-align: center; }
+   footer .right-cols {       
+      width: 90% !important;
+      margin: 0 auto ;
+      margin-bottom: 42px; 
+      text-align: center;
+   }
+   footer .right-cols .columns {
+      float: left;       
+      padding: 0 30px;    
+   }
+   footer .right-cols .columns:last-child { 
+      clear: both; 
+      float: left;
+   }   
+
+   /* Go To Top Button */
+   #go-top { margin-left: -22px; }
+   #go-top a {
+   	width: 54px;
+   	height: 54px;
+      font-size: 18px;
+      line-height: 54px;
+   }
+
+}
+
+
+@media only screen and (max-width: 1280px) and (max-height: 450px) {
+   ul#nav {
+      height: auto !important;
+      margin-right: 5px !important;
+      width:100% !important;
+	   }
+
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 40px !important;
+   display: inline-block;
+   margin-right: 10px !important;
+   }
+.herrow {
+    background-image: url(img/logo.svg);
+    background-size:60%;
+
+}
+} 
+
+@media only screen and (max-width: 1024px) {  
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap {
@@ -136,70 +203,7 @@
 
    /* hide social icons */
    /*.header-social { display: none; }*/
-
-
-   /* Header Styles
-   -------------------------------------------------------------------- */
-   header .logo { margin-right: 36px; }
-
-   /* Hero Section
-   -------------------------------------------------------------------- */
-   #hero { padding-top: 48px; }
-
-   
-   /* footer
-   ------------------------------------------------------------------------ */
-   footer { text-align: center; }
-   footer .info { padding-right: 30px; }
-   footer .info p { margin-bottom: 18px; }
-   footer h3:before { text-align: center; }
-   footer .right-cols {       
-      width: 90% !important;
-      margin: 0 auto ;
-      margin-bottom: 42px; 
-      text-align: center;
-   }
-   footer .right-cols .columns {
-      float: left;       
-      padding: 0 30px;    
-   }
-   footer .right-cols .columns:last-child { 
-      clear: both; 
-      float: left;
-   }   
-
-   /* Go To Top Button */
-   #go-top { margin-left: -22px; }
-   #go-top a {
-   	width: 54px;
-   	height: 54px;
-      font-size: 18px;
-      line-height: 54px;
-   }
-
 }
-
-@media only screen and (max-width: 1280px) and (max-height: 450px) {
-   ul#nav {
-      height: auto !important;
-      margin-right: 5px !important;
-      width:100% !important;
-	   }
-
-ul#nav li {
-   position: relative;
-   list-style: none;
-   height: 40px !important;
-   display: inline-block;
-   margin-right: 10px !important;
-   }
-.herrow {
-    background-image: url(img/logo.svg);
-    background-size:60%;
-
-}
-} 
-
 /* screenwidth less than or equal 480px - mobile wide
   -------------------------------------------------------------------------- */
 @media only screen and (max-width: 480px) {   
