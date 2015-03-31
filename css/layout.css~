@@ -292,7 +292,7 @@ ul#nav li.current a {
     background: #eee;
     overflow: hidden;
     min-height:100%;
-    background-image: url(img/hero-bg.png);
+    background-image: url(img/hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat no-repeat;
     background-position: center center;

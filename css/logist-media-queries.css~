@@ -26,11 +26,12 @@
    /* nav-wrap */
    #nav-wrap { font: 16px; }
 
-.herrow
+/*.herrow
 {
     background-image: url(img/logonarrow.svg);
+	 background-size:50%;
 }
-   
+  */ 
    /* Footer
    ------------------------------------------------------------------- */
    footer .right-cols .columns { width: 50% !important; }
@@ -56,8 +57,8 @@
 
    /* Header Styles
    -------------------------------------------------------------------- */
-   header .logo { margin-right: 36px; }
-
+  /* header .logo { margin-right: 36px; }
+*/
    /* Hero Section
    -------------------------------------------------------------------- */
    #hero { padding-top: 48px; }
@@ -110,14 +111,16 @@ ul#nav li {
    display: inline-block;
    margin-right: 10px !important;
    }
+/*
 .herrow {
     background-image: url(img/logo.svg);
     background-size:60%;
 
 }
+*/
 } 
 
-@media only screen and (max-width: 1024px) {  
+@media only screen and (max-width: 920px) {  
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap {
