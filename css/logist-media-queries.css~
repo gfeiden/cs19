@@ -1,0 +1,251 @@
+/* 
+=====================================================================
+*   Woo Media Queries
+*   url: styleshout.com
+*   05-02-2014
+/* ================================================================== */
+
+
+
+/* screenwidth less than or equal 900px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 900px) {
+
+	/* General and Common Styles */
+	h1 { font-size: 26px; }
+
+   /* Header Styles
+   ------------------------------------------------------------------ */
+   header .header-social { font-size: 18px; }
+   header .header-social li { margin-right: 15px; }
+
+    /* Hero Section
+   ------------------------------------------------------------------ */
+   #hero { padding-top: 60px; }
+
+   /* nav-wrap */
+   #nav-wrap { font: 16px; }
+
+.herrow
+{
+    background-image: url(img/logonarrow.svg);
+}
+   
+   /* Footer
+   ------------------------------------------------------------------- */
+   footer .right-cols .columns { width: 50% !important; }
+   footer .right-cols .columns:last-child { 
+      clear: left; 
+      float: left;      
+   }
+
+}
+
+/* screenwidth less than 1280px - mobile/smaller tablets
+---------------------------------------------------------------------- */
+@media only screen and (max-width: 1280px) {
+
+	/* General and Common Styles */
+	.section-head { padding: 0 0px; }
+   p {font-size: 18px;}
+   #calendar #day {font-size:20px;}
+   h1 {font-size: 28px;}
+
+
+
+
+   /* Header Styles
+   -------------------------------------------------------------------- */
+   header .logo { margin-right: 36px; }
+
+   /* Hero Section
+   -------------------------------------------------------------------- */
+   #hero { padding-top: 48px; }
+
+   
+   /* footer
+   ------------------------------------------------------------------------ */
+   footer { text-align: center; }
+   footer .info { padding-right: 30px; }
+   footer .info p { margin-bottom: 18px; }
+   footer h3:before { text-align: center; }
+   footer .right-cols {       
+      width: 90% !important;
+      margin: 0 auto ;
+      margin-bottom: 42px; 
+      text-align: center;
+   }
+   footer .right-cols .columns {
+      float: left;       
+      padding: 0 30px;    
+   }
+   footer .right-cols .columns:last-child { 
+      clear: both; 
+      float: left;
+   }   
+
+   /* Go To Top Button */
+   #go-top { margin-left: -22px; }
+   #go-top a {
+   	width: 54px;
+   	height: 54px;
+      font-size: 18px;
+      line-height: 54px;
+   }
+
+}
+
+
+@media only screen and (max-width: 1280px) and (max-height: 450px) {
+   ul#nav {
+      height: auto !important;
+      margin-right: 5px !important;
+      width:100% !important;
+	   }
+
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 40px !important;
+   display: inline-block;
+   margin-right: 10px !important;
+   }
+.herrow {
+    background-image: url(img/logo.svg);
+    background-size:60%;
+
+}
+} 
+
+@media only screen and (max-width: 1024px) {  
+   /* mobile navigation
+   -------------------------------------------------------------------- */
+   #nav-wrap {
+      font-size: 18px;
+      line-height: 36px;
+      background: transparent !important;
+      letter-spacing: 1px;  
+      color: #515968;
+      position: absolute;
+      top: 0;
+      left: 10px;
+   }
+   #nav-wrap > a {	 
+      text-align: left;
+      border: none;            
+      color: #fff;
+      font-size: 12px;
+      height: 54px;
+      line-height: 54px; 
+      color: transparent;
+      float: left;                             
+      font: 0/0 a;
+      text-shadow: none;
+      position: relative;
+      top: 0px;
+      left: auto;
+   }
+
+	#nav-wrap > a:before {
+	   font-family: 'FontAwesome';
+      content: "\f0c9";
+      color: #fff;
+      margin: 0;
+      font-size: 25px;
+      line-height: 54px;
+      text-align: left;      
+      display: block; 
+      float: left;     
+	}
+
+   /* hide menu panel */
+   #nav-wrap ul#nav {
+      padding: 24px 36px 24px 36px;
+      
+      background: #333; 
+      height: auto;
+      display: none;
+      clear: both;
+      width: auto; 
+      overflow-y:auto;            
+      position: relative;
+      top: 0;
+      right: 28px;           
+   }
+   
+   /* display toggle buttons */
+	.no-js #nav-wrap:not( :target ) > a:first-of-type,
+	.no-js #nav-wrap:target > a:last-of-type  {
+	   display: block;
+	} 
+   .js #nav-wrap a { display: block; }  
+
+   /* display menu panels - no JS*/
+   .no-js #nav-wrap:target > ul#nav  {
+      display: block;           
+   }
+
+   ul#nav li {
+      display: block;
+      height: auto;      
+      text-align: left;
+   }
+  
+   ul#nav li a {  
+      display: block;   
+      width: auto;  
+      margin: 0;
+      padding: 0;      
+      margin: 12px 0; 
+      line-height: 16px; /* reset line-height from 54px */
+      border: none;
+   }  
+
+   /* hide social icons */
+   /*.header-social { display: none; }*/
+}
+/* screenwidth less than or equal 480px - mobile wide
+  -------------------------------------------------------------------------- */
+@media only screen and (max-width: 480px) {   
+
+      h1 { font-size: 20px; }
+      p, label    {font-size: 16px;}
+   /* mobile navigation
+   -------------------------------------------------------------------- */
+   #nav-wrap { width: 100%; }
+   #nav-wrap ul#nav { 
+      width: 80%;
+      float: none;
+      right: 0;             
+   }
+   /* Hero Section
+   -------------------------------------------------------------------- */
+   #hero { padding-top: 42px; }
+   
+      /* Footer
+   ------------------------------------------------------------------- */
+   footer .right-cols .columns { padding: 0 10px; }        
+
+}
+
+/* screenwidth less than or equal 420px - mobile narrow
+  -------------------------------------------------------------------------- */
+
+
+/* make sure the menu is visible on larger screens
+  -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1280px) {
+   
+   #nav-wrap ul#nav { display: block !important; }
+
+}
+
+
+
+
+
+
+
+
+
