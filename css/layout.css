@@ -777,6 +777,11 @@ footer .copyright {
 #go-down a.light {
     color: #fff;
 }
+#hero #go-down a.light {
+    color: #fff;
+	 background-color: #bb3e3e;
+}
+
 #go-down a:hover { 
     background: rgba(55, 55, 55, 0.2);
     
