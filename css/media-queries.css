@@ -36,12 +36,12 @@
 	/* Hero Section
 	------------------------------------------------------------------ */
 	#hero { padding-top: 60px; }
-	#hero #go-down {
+	#go-down {
 		width: 40px;
 		height: 40px;
 		margin-left: -20px;	
 	}
-	#hero #go-down a {
+	#go-down a {
 		width: 40px;
 		height: 40px;
 		font-size: 24px;
@@ -231,12 +231,12 @@
 
 @media only screen and (max-height: 500px) {
 
-       #hero #go-down {
+       #go-down {
                 width: 40px;
                 height: 40px;
                 margin-left: -20px;     
         }
-        #hero #go-down a {
+       #go-down a {
                 width: 40px;
                 height: 40px;
                 font-size: 24px;

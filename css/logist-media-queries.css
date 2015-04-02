@@ -13,87 +13,64 @@
 
 	/* General and Common Styles */
 	h1 { font-size: 26px; }
+        h2 { font-size: 22px; }
+        h3 { font-size: 20px; }
 
-   /* Header Styles
-   ------------------------------------------------------------------ */
-   header .header-social { font-size: 18px; }
-   header .header-social li { margin-right: 15px; }
+	/* Header Styles
+	------------------------------------------------------------------ */
+	header .header-social { font-size: 18px; }
+	header .header-social li { margin-right: 15px; }
 
-    /* Hero Section
-   ------------------------------------------------------------------ */
-   #hero { padding-top: 60px; }
+	/* Hero Section
+	------------------------------------------------------------------ */
+	#hero { padding-top: 60px; }
+	
+	/* nav-wrap */
+	#nav-wrap { font: 16px; }
 
-   /* nav-wrap */
-   #nav-wrap { font: 16px; }
+       #go-down {
+                width: 40px;
+                height: 40px;
+                margin-left: -20px;     
+        }
+       #go-down a {
+                width: 40px;
+                height: 40px;
+                font-size: 24px;
+                line-height: 40px;
+        }
 
-/*.herrow
-{
-    background-image: url(img/logonarrow.svg);
-	 background-size:50%;
 }
-  */ 
-   /* Footer
-   ------------------------------------------------------------------- */
-   footer .right-cols .columns { width: 50% !important; }
-   footer .right-cols .columns:last-child { 
-      clear: left; 
-      float: left;      
-   }
 
-}
-
-/* screenwidth less than 1280px - mobile/smaller tablets
+/* screenwidth less than 1280px - mobile smaller tablets
 ---------------------------------------------------------------------- */
-@media only screen and (max-width: 1280px) {
 
+@media only screen and (max-width: 1280px) {
 	/* General and Common Styles */
 	.section-head { padding: 0 0px; }
-   p {font-size: 18px;}
-   #calendar #day {font-size:20px;}
-   h1 {font-size: 28px;}
+	p {font-size: 18px;}
+	h1 {font-size: 28px;}
 
-
-
-
-   /* Header Styles
-   -------------------------------------------------------------------- */
-  /* header .logo { margin-right: 36px; }
-*/
-   /* Hero Section
-   -------------------------------------------------------------------- */
-   #hero { padding-top: 48px; }
+	/* Hero Section
+	-------------------------------------------------------------------- */
+	#hero { padding-top: 48px; }
 
    
-   /* footer
-   ------------------------------------------------------------------------ */
-   footer { text-align: center; }
-   footer .info { padding-right: 30px; }
-   footer .info p { margin-bottom: 18px; }
-   footer h3:before { text-align: center; }
-   footer .right-cols {       
-      width: 90% !important;
-      margin: 0 auto ;
-      margin-bottom: 42px; 
-      text-align: center;
-   }
-   footer .right-cols .columns {
-      float: left;       
-      padding: 0 30px;    
-   }
-   footer .right-cols .columns:last-child { 
-      clear: both; 
-      float: left;
-   }   
+	/* footer
+	------------------------------------------------------------------------ */
+	footer { text-align: center; }
+	footer .info { padding-right: 30px; }
+	footer .info p { margin-bottom: 18px; }
+	footer h3:before { text-align: center; }
 
-   /* Go To Top Button */
-   #go-top { margin-left: -22px; }
-   #go-top a {
-   	width: 54px;
-   	height: 54px;
-      font-size: 18px;
-      line-height: 54px;
-   }
-
+	/* Go To Top Button */
+	#go-top { margin-left: -22px; }
+	#go-top a {
+   		width: 54px;
+   		height: 54px;
+		font-size: 18px;
+		line-height: 54px;
+	}
 }
 
 
@@ -234,10 +211,6 @@ ul#nav li {
    #hotels p { text-align: left; }
    #language p { text-align: left; }
    
-      /* Footer
-   ------------------------------------------------------------------- */
-   footer .right-cols .columns { padding: 0 10px; }        
-
 }
 
 /* screenwidth less than or equal 420px - mobile narrow
