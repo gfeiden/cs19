@@ -273,6 +273,10 @@ ul#nav li.current a {
     }
 }
 
+/*
+	Ipad and other device that don't support background-size: cover
+	will see background-size: 100%
+*/
 
 #hero {
     height: 100%;
@@ -281,12 +285,20 @@ ul#nav li.current a {
     overflow: hidden;
     min-height:100%;
     background-image: url(img/logo.svg), url(img/hero-bg.jpg);
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat no-repeat;
     background-position: center center;
     background-attachment: fixed;
     text-align: center;
 }
+
 
 #hero .row {
     max-width: 1040px;
