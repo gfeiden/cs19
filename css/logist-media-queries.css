@@ -225,6 +225,8 @@ ul#nav li {
    -------------------------------------------------------------------- */
    #hero { padding-top: 42px; }
    
+   #venues div.img { min-width: 300px; }
+   
       /* Footer
    ------------------------------------------------------------------- */
    footer .right-cols .columns { padding: 0 10px; }        

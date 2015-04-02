@@ -855,6 +855,7 @@ hero #go-down {
 #venues div.img {
     display: inline-block;
     width: 47%;
+    min-width: 400px;
     padding: 2%;
 
 }
