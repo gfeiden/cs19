@@ -760,22 +760,19 @@ footer .copyright {
 #go-down a.light {
     color: #fff;
 }
-<<<<<<< HEAD
-#hero #go-down {
+hero #go-down {
     top: 80%;
 }
 
 #hero #go-down a.light {
     color: #fff;
-=======
-
+}
 #hero #go-down {
 	top: 83%;
 }
 #hero #go-down a.light {
 	color: #fff;
->>>>>>> 632570bc0482dbe86be67a3b61847047c0ab676c
-	background-color: #bb3e3e;
+    background-color: #bb3e3e;
 }
 
 #go-down a:hover { 
