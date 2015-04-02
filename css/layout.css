@@ -30,7 +30,7 @@ body {
     line-height: 36px;
     color: #666;
         -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-        webkit-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
     margin: 0;
     padding: 0;
     border: 0;
@@ -297,6 +297,9 @@ ul#nav li.current a {
     background-position: center center;
     background-attachment: fixed;
     text-align: center;
+    @media (max-width: @iphone-screen) {
+        background-attachment: scroll;
+    }
 }
 
 
@@ -349,7 +352,7 @@ ul#nav li.current a {
     height: 275px;
     width: 220px;
     
-    padding: 10px;
+    padding: 5px;
     margin: 10px 10px 10px 10px;
     
     text-align: center;
