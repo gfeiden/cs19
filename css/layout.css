@@ -273,16 +273,6 @@ ul#nav li.current a {
     }
 }
 
-/* .herrow
-{
-    height: 100%;
-    min-height: 100%;
-    text-align:center;
-    background-image: url(img/logo.svg);
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    background-size: 60%;
-*/
 
 #hero {
     height: 100%;
@@ -290,7 +280,7 @@ ul#nav li.current a {
     background: #eee;
     overflow: hidden;
     min-height:100%;
-    background-image: url(img/hero-bg.svg);
+    background-image: url(img/logo.svg), url(img/hero-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat no-repeat;
     background-position: center center;
@@ -770,12 +760,21 @@ footer .copyright {
 #go-down a.light {
     color: #fff;
 }
+<<<<<<< HEAD
 #hero #go-down {
     top: 80%;
 }
 
 #hero #go-down a.light {
     color: #fff;
+=======
+
+#hero #go-down {
+	top: 83%;
+}
+#hero #go-down a.light {
+	color: #fff;
+>>>>>>> 632570bc0482dbe86be67a3b61847047c0ab676c
 	background-color: #bb3e3e;
 }
 

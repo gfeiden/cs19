@@ -43,13 +43,11 @@
 
             <ul id="nav" class="nav">
                 <li><a class="smoothscroll" href="#hero">home</a></li>
+                <li><a class="smoothscroll" href="#about">about</a></li>
                 <li><a class="smoothscroll" href="#news">news</a></li>
-                <li><a class="smoothscroll" href="#speakers">speakers</a></li>
-                <li><a class="smoothscroll" href="#calendar">schedule</a></li>
-                <li><a class="smoothscroll" href="#registration">tickets</a></li>
+                <li><a class="smoothscroll" href="#registration">registration</a></li>
                 <li><a class="smoothscroll" href="#logistics">logistics</a></li>
                 <li><a class="smoothscroll" href="#ocs">committees</a></li>
-                <li><a class="smoothscroll" href="#about">about</a></li>
                 <li><a class="smoothscroll" href="#contact">contact</a></li>
             </ul> <!-- end #nav -->
 
@@ -63,7 +61,18 @@
 
    </header> <!-- Header End -->
 
-
+   <!--
+	Table of contents:
+	------------------
+		Hero
+		About CS
+		News
+		Registration
+		Logistics
+		Committees
+		Footer
+	------------------
+	-->
    <!-- Homepage Hero
    ================================================== -->
     <div itemscope itemtype="http://schema.org/Event">
@@ -84,13 +93,32 @@
 
         <!-- <div class="herrow"> -->
             <div id="go-down">
-                <a class="light smoothscroll" href="#news">
+                <a class="light smoothscroll" href="#about">
 						<i class="fa fa-chevron-down fa-1x"></i></a>
             </div>
         </div>
 
    </section> <!-- Homepage Hero end -->
 
+   <!-- About Section
+
+   ================================================== -->
+   
+    <section id='about'>
+        <div class="row">
+	        <div class="row section-head">
+ 	            <h1>About Cool Stars</h1>
+	        </div>
+            <p align="justify">
+                The "Cambridge Workshop on Cool Stars, Stellar Systems, and the Sun" (also known as "Cool Stars") has been running for 36 years since the first one was held in Cambridge, Massachusetts, in 1980. Previous Cool Stars venues include Santa Fe, NM; 		  Boulder, CO; Seattle, WA; Tucson, AZ; Athens, GA; Florence, Italy; Tenerife, Spain; Hamburg, Germany; Pasadena, CA; St. Andrews, Scotland; Barcelona, Spain; and Flagstaff, AZ. We are delighted to add Uppsala to this list.</br></br>
+	            Cool Stars is now a well established workshop, which gathers biennially about 400 worldwide experts in Low-Mass Stars, Solar Physics and Exoplanets, creating an stimulating cross-disciplinary exchange environment in these fields. Cool Star meetings have a long 		  tradition of presenting cutting-edge science, as shown by outstanding results such as the discovery of the first Extrasolar Planet and the first confirmed Brown Dwarf, which were both first announced in the Cool Stars 9 meeting celebrated in Florence, Italy in 1995. 
+            </p>
+            <div id="go-down">
+
+                <a class="smoothscroll" href="#news"><i class="fa fa-chevron-down"></i></a>
+            </div>
+        </div>
+    </section> <!-- About end -->
     
     <!-- News Section
     ================================================== -->
@@ -115,67 +143,12 @@
                 Uppsala is selected as host of Cool Stars 19 in 2016.
             </p>
             <div id="go-down">
-                <a class="light smoothscroll" href="#speakers"><i class="fa fa-chevron-down"></i></a>
+                <a class="light smoothscroll" href="#registration"><i class="fa fa-chevron-down"></i></a>
             </div>
         </div>
     </section> <!-- News end -->
-    
-    <!-- Invited Speakers
-    ================================================== -->
-    <section id='speakers'>
-        <div class="row">
-	        <div class="row section-head">
- 	            <h1>Invited Speakers</h1>
-	        </div>
-	        <div id="card-collection">
-	            <div id="card">
-	                <div class="head" style="background-image: url('images/heads/GFeiden.jpeg')"></div>
-	                <h2>Gregory Feiden</h2>
-	                <h3>Uppsala University</h3>
-	                <div class="social">
-	                    <a href="https://www.twitter.com/GFeiden/"><i class="fa fa-twitter"></i></a>&nbsp;
-	                    <a href="https://www.github.com/gfeiden/"><i class="fa fa-github"></i></a>
-	                </div>
-	            </div>
-	        </div>
-	        <div id="go-down">
-                <a class="smoothscroll" href="#calendar"><i class="fa fa-chevron-down"></i></a>
-            </div>
-        </div>
-    </section> <!-- Speakers end -->
 
-    <!-- Calendar
-    ================================================== -->
-    <section id="calendar">
-        <div class="row">
-            <div class="row section-head">
-            <h1 align="center">Calendar</h1>
-            </div>
-            <p class="dark" align="justify">
-                Cool Stars 19 will take place from Monday 06 to Friday 10 July 2016. The up-to-date schedule of the conference can be found on the web <a href="schedule">here</a> 
-	       or downloaded as a PDF file <a href="#calendar">here <i class="fa fa-download"></i></a>.
-            </p>
-            <div id="open">
-                <label id="day" class="collapse" for="_mon">Mon</label><input id="_mon" type="checkbox"/>
-              
-                <label id="day" class="collapse" for="_tue">Tue</label><input id="_tue" type="checkbox"/>
-                <label id="day" class="collapse" for="_wed">Wed</label><input id="_wed" type="checkbox"/>
-                <label id="day" class="collapse" for="_thu">Thu</label><input id="_thu" type="checkbox"/>
-                <label id="day" class="collapse" for="_fri">Fri</label><input id="_fri" type="checkbox"/>
-                
-                <div id="_mon" class="day-schedule"><h1>Monday's Schedule</h1></div>
-                <div id="_tue" class="day-schedule"><h1>Tuesday's Schedule</h1></div>
-                <div id="_wed" class="day-schedule"><h1>Wednesday's Schedule</h1></div>
-                <div id="_thu" class="day-schedule"><h1>Thursday's Schedule</h1></div>
-                <div id="_fri" class="day-schedule"><h1>Friday's Schedule</h1></div>
-            </div>
-            <div id="go-down">
-                <a class="smoothscroll" href="#registration"><i class="fa fa-chevron-down"></i></a>
-            </div>
-        </div>
-    </section> <!-- Calendar End -->
-
-    <!-- Registration Section
+   <!-- Registration Section
     ================================================== -->
     <section id="registration">
 
@@ -214,30 +187,11 @@
 	            For more information on travel, venues, and hotels, <a href="logistics.html">click here</a>.
 	        </p>
 	        <br/>
-	        <!--div class="wrapper">
-	            <div class="img">
-                    <img src="images/botaniska.jpg" alt="" />
-                    <h2>Botaniska Trädgården</h2>
-                    <h3>Welcome Reception</h3>
-                </div>
-                <div class="img">
-                    <img src="images/ukk.jpg" alt="" />
-                    <h2>Uppsala Konsert &amp; Kongress</h2>
-                    <h3>Conference Venue</h3>
-                </div>
-                <div class="img" style="width: 80%;">
-                    <img src="images/slott_sommar.jpg" alt="" />
-                    <h2>Uppsala Slott &ndash; Rikssalen</h2>
-                    <h3>Conference Banquet</h3>
-                </div>
-            
-	        </div-->
             <div id="go-down">
                 <a class="smoothscroll" href="#ocs"><i class="fa fa-chevron-down"></i></a>
             </div>
         </div>
     </section> <!-- Logistics end -->
-    
     <!-- Organizing Committees
     ================================================== -->
     <section id='ocs'>
@@ -397,29 +351,20 @@
                     <h3>Uppsala University</h3>
 	            </div>
 	        </div>
-	        <div id="go-down">
+	        <!--
+				<div id="go-down">
                 <a class="smoothscroll" href="#about"><i class="fa fa-chevron-down"></i></a>
             </div>
+				-->				
         </div>
     </section> <!-- Speakers end -->
    
-   <!-- About Section
-   ================================================== -->
-   
-    <section id='about'>
-        <div class="row">
-	        <div class="row section-head">
- 	            <h1>About Cool Stars</h1>
-	        </div>
-            <p align="justify">
-                The "Cambridge Workshop on Cool Stars, Stellar Systems, and the Sun" (also known as "Cool Stars") has been running for 36 years since the first one was held in Cambridge, Massachusetts, in 1980. Previous Cool Stars venues include Santa Fe, NM; 		  Boulder, CO; Seattle, WA; Tucson, AZ; Athens, GA; Florence, Italy; Tenerife, Spain; Hamburg, Germany; Pasadena, CA; St. Andrews, Scotland; Barcelona, Spain; and Flagstaff, AZ. We are delighted to add Uppsala to this list.</br></br>
-	            Cool Stars is now a well established workshop, which gathers biennially about 400 worldwide experts in Low-Mass Stars, Solar Physics and Exoplanets, creating an stimulating cross-disciplinary exchange environment in these fields. Cool Star meetings have a long 		  tradition of presenting cutting-edge science, as shown by outstanding results such as the discovery of the first Extrasolar Planet and the first confirmed Brown Dwarf, which were both first announced in the Cool Stars 9 meeting celebrated in Florence, Italy in 1995. 
-            </p>
-            <!--<div id="go-down">
-                <a class="smoothscroll" href="#venue"><i class="fa fa-chevron-down"></i></a>
-            </div>-->
-        </div>
-    </section> <!-- About end -->
+
+
+ 
+    
+    
+
     
   
    <!-- Footer
