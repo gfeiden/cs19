@@ -273,6 +273,7 @@ ul#nav li.current a {
     }
 }
 
+
 #hero {
     height: 100%;
     padding-top:55px;
@@ -285,11 +286,6 @@ ul#nav li.current a {
     background-position: center center;
     background-attachment: fixed;
     text-align: center;
-    
-    /*-webkit-animation: fade-in 3s ease-in-out;
-    -moz-animation: fade-in 3s ease-in-out;
-    -o-animation: fade-in 3s ease-in-out;
-    animation: fade-in 3s ease-in-out;*/
 }
 
 #hero .row {
@@ -764,13 +760,19 @@ footer .copyright {
 #go-down a.light {
     color: #fff;
 }
+hero #go-down {
+    top: 80%;
+}
 
+#hero #go-down a.light {
+    color: #fff;
+}
 #hero #go-down {
 	top: 83%;
 }
 #hero #go-down a.light {
 	color: #fff;
-	background-color: #bb3e3e;
+    background-color: #bb3e3e;
 }
 
 #go-down a:hover { 
@@ -780,7 +782,9 @@ footer .copyright {
 #go-down a.light:hover {
     background: rgba(255, 255, 255, 0.2);
 }
-
+#hero #go-down a:hover {
+    background-color: rgba(162, 87, 87, 0.99);
+}
 /* Go To Top Button */
 #go-top {
 	position: absolute;
@@ -851,6 +855,7 @@ footer .copyright {
 #venues div.img {
     display: inline-block;
     width: 47%;
+    min-width: 400px;
     padding: 2%;
 
 }

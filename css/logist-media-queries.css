@@ -212,7 +212,9 @@ ul#nav li {
 @media only screen and (max-width: 480px) {   
 
       h1 { font-size: 20px; }
-      p, label    {font-size: 16px;}
+      h2 { font-size: 16px; }
+      h3 { font-size: 14px; }
+      p, label, ol  {font-size: 12px;}
    /* mobile navigation
    -------------------------------------------------------------------- */
    #nav-wrap { width: 100%; }
@@ -224,6 +226,13 @@ ul#nav li {
    /* Hero Section
    -------------------------------------------------------------------- */
    #hero { padding-top: 42px; }
+   
+   #venues div.img { min-width: 300px; }
+   
+   #travel p { text-align: left; }
+   #travel ol li { text-align: left; }
+   #hotels p { text-align: left; }
+   #language p { text-align: left; }
    
       /* Footer
    ------------------------------------------------------------------- */
