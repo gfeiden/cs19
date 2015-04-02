@@ -295,14 +295,20 @@ ul#nav li.current a {
     background-size: cover;
     background-repeat: no-repeat no-repeat;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     text-align: center;
     @media (max-width: @iphone-screen) {
         background-attachment: scroll;
     }
 }
 
+.no-svg #hero {
+    background-image: url(img/logo.png);
+}
 
+.svg #hero {
+    background-image: url(img/logo.svg), url(img/hero-bg.jpg); 
+}
 #hero .row {
     max-width: 1040px;
     background: rgba(245, 245, 245, 0.9)
