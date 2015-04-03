@@ -356,10 +356,10 @@ ul#nav li.current a {
 #card {
     display: inline-block;
     height: 275px;
-    width: 220px;
+    width: 232px;
     
-    padding: 5px;
-    margin: 10px 10px 10px 10px;
+    padding: 0px;
+    margin: 4px;
     
     text-align: center;
 }
