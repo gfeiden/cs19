@@ -297,10 +297,24 @@ ul#nav li.current a {
 
 .no-svg #hero {
     background-image: url(img/logo.png);
+    width: 100%;
 }
 
 .svg #hero {
-    background-image: url(img/logo.svg), url(img/hero-bg.jpg); 
+    padding-top:55px;
+    background: #eee;
+    overflow: hidden;
+    background-image: url(img/logo.svg), url(img/hero-bg.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    text-align: center;
 }
 #hero .row {
     max-width: 1040px;
