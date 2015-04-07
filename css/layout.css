@@ -14,9 +14,11 @@ common stuff
 *,
 *:before,
 *:after {
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
@@ -29,8 +31,8 @@ body {
     font-size: 20px;
     line-height: 36px;
     color: #666;
-        -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-        -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
     margin: 0;
     padding: 0;
     border: 0;
@@ -385,9 +387,14 @@ ul#nav li.current a {
     border: 2px solid #333;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
     -o-border-radius: 100%;
     border-radius: 100%;
     
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat no-repeat;
     background-position: center center;
@@ -428,6 +435,7 @@ ul#nav li.current a {
     
     -webkit-transition: color 0.3s ease-in-out;
     -moz-transition: color 0.3s ease-in-out;
+    -ms-transition: color 1.5s ease-in-out;
     -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
@@ -512,6 +520,7 @@ ul#nav li.current a {
     
     -webkit-transition: opacity 0.3s ease-in-out;
     -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
     -o-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
 }
@@ -553,6 +562,7 @@ label[for^="_"].collapse + input#_mon ~ div#_mon {
     
     -webkit-transition: all 1.5s ease-in-out;
     -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
     -o-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
     
@@ -565,6 +575,7 @@ label[for^="_"].collapse + input#_mon:checked ~ div#_mon {
     
     -webkit-transition: all 1.5s ease-in-out;
     -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
     -o-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
 }
@@ -575,6 +586,7 @@ label[for^="_"].collapse + input#_tue ~ div#_tue {
     
     -webkit-transition: all 1.5s ease-in-out;
     -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
     -o-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
     
@@ -587,6 +599,7 @@ label[for^="_"].collapse + input#_tue:checked ~ div#_tue {
     
     -webkit-transition: all 1.5s ease-in-out;
     -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
     -o-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
 }
@@ -597,6 +610,7 @@ label[for^="_"].collapse + input#_wed ~ div#_wed {
     
     -webkit-transition: all 1.5s ease-in-out;
     -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
     -o-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
     
@@ -609,6 +623,7 @@ label[for^="_"].collapse + input#_wed:checked ~ div#_wed {
     
     -webkit-transition: all 1.5s ease-in-out;
     -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
     -o-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
 }
@@ -619,6 +634,7 @@ label[for^="_"].collapse + input#_thu ~ div#_thu {
     
     -webkit-transition: all 1.5s ease-in-out;
     -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
     -o-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
     
@@ -631,6 +647,7 @@ label[for^="_"].collapse + input#_thu:checked ~ div#_thu {
     
     -webkit-transition: all 1.5s ease-in-out;
     -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
     -o-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
 }
@@ -640,6 +657,7 @@ label[for^="_"].collapse + input#_fri ~ div#_fri {
     
     -webkit-transition: all 1.5s ease-in-out;
     -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
     -o-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
     
@@ -651,6 +669,7 @@ label[for^="_"].collapse + input#_fri:checked ~ div#_fri {
     
     -webkit-transition: all 1.5s ease-in-out;
     -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
     -o-transition: all 1.5s ease-in-out;
     transition: all 1.5s ease-in-out;
 }
@@ -660,6 +679,10 @@ label[for^="_"].collapse + input#_fri:checked ~ div#_fri {
     float: left;
     
     background: #fff;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     border-radius: 5px;
 }
 
@@ -787,6 +810,7 @@ footer .copyright {
     
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
     -o-border-radius: 100%;
  	border-radius: 100%;
 }
