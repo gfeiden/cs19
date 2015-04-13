@@ -736,6 +736,12 @@ footer .update {
     font-weight: 300;
 }
 
+footer .sponsor {
+    color: #ddd;
+    font-family: monospace;
+    font-weight: 400;
+}
+
 footer a, footer a:visited { color: #bb3e3e; }
 footer a:hover, footer a:focus { color: #fff; }
 
