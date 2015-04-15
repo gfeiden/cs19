@@ -730,6 +730,20 @@ footer {
     position: relative;
 }
 
+.fleft {
+   max-width: 470px;
+   display: inline-block;
+   margin-left: 0px;
+   margin-right: 20px;
+}
+.fright {
+   max-width: 470px;
+   display: inline-block;
+   margin-left: 20px;
+   margin-right: 0px;
+}
+
+
 footer .update {
     color: #ddd;
     font-family: "Source Sans Pro", sans-serif;
